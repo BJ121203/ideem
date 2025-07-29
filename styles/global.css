@@ -213,4 +213,33 @@
       }
     }
 
+    .pilares-section {
+      background-color: #eaf6fc;
+      padding: 60px 20px;
+      text-align: center;
+    }
+
+    .pilares-section h2 {
+      font-weight: 700;
+      color: #1b4f92;
+      margin-bottom: 40px;
+    }
+
+    .pilar-icon {
+      font-size: 40px;
+      color: #009cde;
+      margin-bottom: 15px;
+    }
+
+    .pilar-title {
+      font-weight: 700;
+      color: #009cde;
+      margin-bottom: 10px;
+    }
+
+    .pilar-text {
+      color: #444;
+      font-size: 16px;
+    }
+
 
