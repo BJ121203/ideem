@@ -35,6 +35,72 @@
     --celeste: #14ACE8;
 }
 
+/*/Barra*/
+
+.navbar {
+    background-color: var(--azul-bajo);
+    padding-top: 0.5%;
+    padding-bottom: 0.5%;
+    padding-left: 6%;
+    padding-right: 2%;
+}
+
+.ideem-logo {
+    height: 2.8rem;
+    width: auto;
+}
+
+.nav-link {
+    font-family: 'Montserrat-Bold';
+    font-size: 1rem;
+    color: white;
+}
+
+.nav-link:hover {
+    color: var(--dorado);
+}
+
+.navbar-nav .nav-item:not(:last-child) {
+    margin-right: 0.8rem;
+}
+
+.navbar-collapse {
+    color: white;
+}
+
+.dropdown-hover:hover .dropdown-menu {
+    display: block;
+    margin-top: 0;
+}
+
+.dropdown-menu {
+    width: 100vh;
+    padding: 5%;
+    width: 100%;
+    margin-top: 1rem !important;
+    padding: 1.5rem;
+    border-top: 1px solid #dee2e6;
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .15);
+}
+
+.dropdown-header {
+    font-family: 'Montserrat-Bold';
+    color: black;
+    font-size: 1.2rem;
+}
+
+.dropdown-item {
+    font-family: 'Montserrat-Regular';
+    font-size: 0.9rem;
+}
+
+.dropdown-item.ver-mas {
+  font-weight: bold;
+  color: #007bff; 
+  margin-bottom: 0.5rem;
+}
+
+
 /*-------------------------------Footer---------------------------------------------------*/
 .footer-bg {
   background-image: url('https://res.cloudinary.com/dwvatbtfk/image/upload/v1753714987/BGFooter_l1k4uk.jpg');
