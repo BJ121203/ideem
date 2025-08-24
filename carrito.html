@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link
+      rel="stylesheet"
+      href="https://necolas.github.io/normalize.css/8.0.1/normalize.css"
+    />
+    <link
+      rel="shortcut icon"
+      type="image/x-icon"
+      href="assets/images/icon.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&family=Tilt+Neon&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="https://unpkg.com/jam-icons/css/jam.min.css" />
+    <link rel="stylesheet" href="assets/css/styles.css" />
+    <title>Carrito de compras</title>
+  </head>
+  <body>
+    <!-- Cabecera -->
+    <header class="main-header">
+      <div class="content-wrapper">
+        <a href="index.html">
+          <img src="assets/images/nav2.png" alt="Logo Calavera" />
+        </a>
+        <span id="open-menu-button" class="jam jam-menu"></span>
+        <nav id="main-menu" class="main-menu">
+          <span id="close-menu-button" class="jam jam-close"></span>
+          <ul>
+            <li>
+              <a href="index.html">Inicio</a>
+            </li>
+
+            <li>
+              <a href="assets/menu.pdf" target="_blank">Menu</a>
+            </li>
+            <li>
+              <a href="pedidos.html">Pide online</a>
+            </li>
+            <li>
+              <a href="reservas.html">Reservas</a>
+            </li>
+            <li>
+              <a href="eventos.html">Eventos</a>
+            </li>
+            <li>
+              <a href="registro.html">Registrate</a>
+            </li>
+          </ul>
+          <div class="user-nav">
+            <a href="cuenta.html"><span class="jam jam-user-circle"></span></a>
+            <a href="carrito.html" id="cart-link"
+              ><span class="jam jam-shopping-cart"></span
+            ></a>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Principal -->
+    <main>
+      <div class="containerCarrito">
+        <!-- Carrito de compras  -->
+        <div class="container mt-3 mb-3">
+          <h3>Productos seleccionados</h3>
+          <table class="table table-bordered border-dark">
+            <thead class="">
+              <tr>
+                <th>Producto</th>
+                <th>Precio</th>
+                <th>Cantidad</th>
+                <th>Agregar</th>
+                <th>Eliminar</th>
+                <th>Modificar</th>
+              </tr>
+            </thead>
+            <tbody id="cart-items">
+              <!-- Elementos en el carrito -->
+            </tbody>
+          </table>
+          <div class="d-flex flex-column align-items-end btnCarrito">
+            <h4>SubTotal: C$<span id="subtotal-price"></span></h4>
+            <h4>Iva: C$<span id="iva-price"></span></h4>
+            <h4>Total: C$<span id="total-price"></span></h4>
+            <button class="btn btn-danger" onclick="clearCart()">
+              Vaciar Carrito
+            </button>
+            <button class="btn btn-primary" onclick="viewForm()">
+              Proceder con la compra
+            </button>
+          </div>
+          <!-- Forumalario  -->
+          <div class="formCompra" id="formCompra">
+            <h3>Formulario de Compra</h3>
+            <!-- Items del formulario -->
+            <ul
+              class="nav nav-tabs justify-content-center"
+              id="myTab"
+              role="tablist"
+            >
+              <li class="nav-item" role="presentation">
+                <a
+                  class="nav-link active"
+                  id="personal-tab"
+                  data-toggle="tab"
+                  href="#personal"
+                  role="tab"
+                  aria-controls="personal"
+                  aria-selected="true"
+                  >Datos</a
+                >
+              </li>
+              <li class="nav-item" role="presentation">
+                <a
+                  class="nav-link"
+                  id="shipping-tab"
+                  data-toggle="tab"
+                  href="#shipping"
+                  role="tab"
+                  aria-controls="shipping"
+                  aria-selected="false"
+                  >Envío</a
+                >
+              </li>
+              <li class="nav-item" role="presentation">
+                <a
+                  class="nav-link"
+                  id="payment-tab"
+                  data-toggle="tab"
+                  href="#payment"
+                  role="tab"
+                  aria-controls="payment"
+                  aria-selected="false"
+                  >Pago</a
+                >
+              </li>
+            </ul>
+            <!-- Contenidos -->
+            <div class="tab-content" id="myTabContent">
+              <!-- Datos Personales -->
+              <div
+                class="tab-pane fade show active"
+                id="personal"
+                role="tabpanel"
+                aria-labelledby="personal-tab"
+              >
+                <form class="mt-3 mb-2">
+                  <div class="form-group">
+                    <label for="name">Nombre</label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="name"
+                      placeholder="Ingresa tu nombre"
+                    />
+                  </div>
+                  <div class="form-group">
+                    <label for="ruc">RUC</label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="ruc"
+                      placeholder="Ingresa tu número RUC (opcional)"
+                    />
+                  </div>
+                  <div class="form-group">
+                    <label for="phone">Teléfono</label>
+                    <input
+                      type="tel"
+                      class="form-control"
+                      id="phone"
+                      placeholder="Ingresa tu teléfono"
+                    />
+                  </div>
+                  <div class="form-group">
+                    <label for="email">Correo Electrónico</label>
+                    <input
+                      type="email"
+                      class="form-control"
+                      id="email"
+                      placeholder="Ingresa tu correo electrónico"
+                    />
+                  </div>
+                  <div class="btnWrap"> 
+                    <div class="btnRight">
+                      <button class="button" onclick="validateInputsDatos()">
+                        >
+                      </button>
+                    </div>
+                  </div>
+                </form>
+              </div>
+              <!-- Envío -->
+              <div class="tab-pane fade" id="shipping" role="tabpanel" aria-labelledby="shipping-tab">
+                <form class="mt-3 mb-2">
+                  <div class="form-check">
+                    <input class="form-check-input" type="radio" name="deliveryOption" id="delivery" value="delivery" checked/>
+                    <label class="form-check-label" for="delivery"
+                      >Envío a domicilio</label
+                    >
+                  </div>
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="deliveryOption"
+                      id="pickup"
+                      value="pickup"
+                    />
+                    <label class="form-check-label" for="pickup"
+                      >Recoger en local</label
+                    >
+                  </div>
+                  <div id="deliveryAddress" class="mt-3">
+                    <div class="form-group">
+                      <label for="sucursalEnvio">Seleccione la sucursal</label>
+                      <select id="sucursalEnvio" name="sucursal">
+                        <option value="">Seleccione una sucursal</option>
+                        <option value="sucursal1">Sucursal 1</option>
+                        <option value="sucursal2">Sucursal 2</option>
+                        <option value="sucursal3">Sucursal 3</option>
+                      </select>
+                    </div>
+                    <div class="form-group">
+                      <label for="barrio">Barrio o colonia</label>
+                      <select id="barrio" name="barrio">
+                        <option value="">Seleccione su barrio o colonia</option>
+                        <option value="barrio1">No Barrio</option>
+                        <option value="barrio2">No Barrio</option>
+                        <option value="barrio3">No Barrio</option>
+                      </select>
+                    </div>
+
+                    <div class="form-group">
+                      <label for="direccion">Dirección y referencias</label>
+                      <input
+                        type="textarea"
+                        class="form-control"
+                        id="direccion"
+                        placeholder="Ingresa tu dirección y referenias más exactas"
+                      />
+                    </div>
+                  </div>
+                  <div id="pickupAddress" class="mt-3" style="display: none">
+                    <div class="form-group">
+                      <label for="sucursalPickup">Seleccione la sucursal</label>
+                      <select id="sucursalPickup" name="sucursal">
+                        <option value="">Seleccione una sucursal</option>
+                        <option value="sucursal1">Sucursal 1</option>
+                        <option value="sucursal2">Sucursal 2</option>
+                        <option value="sucursal3">Sucursal 3</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="btnWrap"> 
+                    <div class="btnLeft">
+                      <button class="button" onclick="volverDatos()">
+                        <
+                      </button>
+                    </div>
+                    <div class="btnRight">
+                      <button class="button" onclick="validateInputsDirection()">
+                        >
+                      </button>
+                    </div>
+                  </div>
+                </form>
+              </div>
+              <!-- Pago -->
+              <div
+                class="tab-pane fade"
+                id="payment"
+                role="tabpanel"
+                aria-labelledby="payment-tab"
+              >
+                <form class="mt-3 mb-2">
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="paymentOption"
+                      id="card"
+                      value="card"
+                      checked
+                    />
+                    <label class="form-check-label" for="card"
+                      >Pago con tarjeta</label
+                    >
+                  </div>
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="paymentOption"
+                      id="cash"
+                      value="cash"
+                    />
+                    <label class="form-check-label" for="cash"
+                      >Pago en efectivo</label
+                    >
+                  </div>
+
+                  <div id="cardDetails" class="mt-3">
+                    <div class="form-group">
+                      <label for="cardHolder">Nombre del Titular</label>
+                      <input
+                        type="text"
+                        class="form-control"
+                        id="cardHolder"
+                        placeholder="Ingresa el nombre del titular"
+                      />
+                    </div>
+                    <div class="form-group">
+                      <label for="cardNumber">Número de Tarjeta</label>
+                      <input
+                        type="text"
+                        class="form-control"
+                        id="cardNumber"
+                        placeholder="Ingresa el número de tu tarjeta"
+                      />
+                    </div>
+                    <div class="form-group">
+                      <label for="cardExpiryMonth">Mes de Expiración</label>
+                      <select class="form-control" id="cardExpiryMonth">
+                        <option value="" disabled selected>Mes</option>
+                        <option value="01">01</option>
+                        <option value="02">02</option>
+                        <option value="03">03</option>
+                        <option value="04">04</option>
+                        <option value="05">05</option>
+                        <option value="06">06</option>
+                        <option value="07">07</option>
+                        <option value="08">08</option>
+                        <option value="09">09</option>
+                        <option value="10">10</option>
+                        <option value="11">11</option>
+                        <option value="12">12</option>
+                      </select>
+                    </div>
+                    <div class="form-group">
+                      <label for="cardExpiryYear">Año de Expiración</label>
+                      <select class="form-control" id="cardExpiryYear">
+                        <option value="" disabled selected>Año</option>
+                        <option value="2024">2024</option>
+                        <option value="2025">2025</option>
+                        <option value="2026">2026</option>
+                        <option value="2027">2027</option>
+                        <option value="2028">2028</option>
+                        <option value="2029">2029</option>
+                        <option value="2030">2030</option>
+                      </select>
+                    </div>
+                    <div class="form-group">
+                      <label for="cardCVV">CVV</label>
+                      <input
+                        type="password"
+                        class="form-control"
+                        id="cardCVV"
+                        placeholder="CVV"
+                      />
+                    </div>
+                  </div>
+
+                  <div id="cashDetails" class="mt-3">
+                    <div class="form-group">
+                      <label for="moneyType">Tipo de moneda con que pagara</label>
+                      <select class="form-control" id="moneyType">
+                        <option value="" disabled selected>Moneda de pago</option>
+                        <option value="01">Córdobas</option>
+                        <option value="02">Dolares</option>
+                      </select>
+                    </div>
+                    <div class="form-group">
+                      <label for="monto">Monto con que pagara</label>
+                      <input
+                        type="text"
+                        class="form-control"
+                        id="monto"
+                        placeholder="Ingresa el monto"
+                      />
+                    </div>
+                  </div>
+
+                  <div class="btnWrap"> 
+                    <div class="btnLeft">
+                      <button class="button" onclick="volverDirection()">
+                        <
+                      </button>
+                    </div>
+                    <div class="btnRight">
+                      <button class="button" onclick="validateInputsPago(),submitForm()">
+                        Finalizar pedido
+                      </button>
+                    </div>
+                  </div>
+
+                </form>
+              </div>   
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+      <div class="container__footer">
+        <div class="box__footer">
+          <div class="logo">
+            <img src="assets/images/footer.png" alt="" />
+          </div>
+          <div class="terms">
+            <p>
+              Somos un restaurante mexicano único en Managua, Nicaragua, que
+              ofrece una experiencia gastronómica auténtica y vibrante. Calavera
+              se destaca por su ambiente acogedor y su apasionada dedicación a
+              la cocina tradicional mexicana.
+            </p>
+          </div>
+        </div>
+        <div class="box__footer">
+          <h4>Horarios</h4>
+          <p>
+            Lunes:cerrado <br /><br />Martes-Viernes<br />11:00 am a 10 pm<br /><br />Sabados-Domingos<br />10:00
+            am a 12:00 pm
+          </p>
+        </div>
+
+        <div class="box__footer">
+          <h4>Contáctanos</h4>
+          <p>
+            Teléfono convencional <br />
+            +505 <br /><br />
+            Whatsapp <br />
+            +505
+          </p>
+        </div>
+
+        <div class="box__footer">
+          <h4>Redes Sociales</h4>
+          <a
+            href="https://www.instagram.com/restaurante_calavera/"
+            target="_blank"
+            ><span class="jam jam-instagram">Instagram</span></a
+          >
+          <a
+            href="https://www.facebook.com/profile.php?id=100092392609908"
+            target="_blank"
+            ><span class="jam jam-facebook">Facebook</span></a
+          >
+          <a href="https://twitter.com/RestCalavera" target="_blank"
+            ><span class="jam jam-twitter">Twitter</span></a
+          >
+          <a href="#" target="_blank"
+            ><span class="jam jam-whatsapp">Whatsapp</span></a
+          >
+        </div>
+      </div>
+
+      <div class="box__copyright">
+        <p>Todos los derechos reservados © 2024 <b>Restaurante Calavera</b></p>
+      </div>
+    </footer>
+
+    <script src="assets/js/pedidos.js"></script>
+    <script src="assets/js/carrito.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  </body>
+</html>

@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
+    <link rel="shortcut icon" type="image/x-icon" href="assets/images/icon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&family=Tilt+Neon&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/jam-icons/css/jam.min.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <title>Rerservas</title>
+  </head>
+  <body>
+    <!-- Cabecera -->
+    <header class="main-header">
+      <div class="content-wrapper">
+        <a href="index.html">
+          <img src="assets/images/nav2.png" alt="Logo Calavera" />
+        </a>
+        <span id="open-menu-button" class="jam jam-menu"></span>
+        <nav id="main-menu" class="main-menu">
+          <span id="close-menu-button" class="jam jam-close"></span>
+          <ul>
+            <li>
+              <a href="index.html">Inicio</a>
+            </li>
+
+            <li>
+              <a href="assets/menu.pdf" target="_blank">Menu</a>
+            </li>
+            <li>
+              <a href="pedidos.html">Pide online</a>
+            </li>
+            <li>
+              <a href="reservas.html">Reservas</a>
+            </li>
+            <li>
+              <a href="eventos.html">Eventos</a>
+            </li>
+            <li>
+              <a href="registro.html">Registrate</a>
+            </li>
+          </ul>
+          <div class="user-nav">
+            <a href="cuenta.html"><span class="jam jam-user-circle"></span></a>
+            <a href="carrito.html"><span class="jam jam-shopping-cart"></span></a>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <div class="containerReserva">
+        <div class="reservaForm">
+          <h2>Realiza tu reserva ya mismo completando el siguiente formulario <br>
+          De manera totalmente gratuita</h2>
+          <form id="reservasForm" class="reservation-form">
+            <div class="item">
+            <label for="sucursal">Seleccione la sucursal</label>
+            <select id="sucursal" name="sucursal">
+                <option value="">Seleccione una sucursal</option>
+                <option value="sucursal1">Sucursal 1</option>
+                <option value="sucursal2">Sucursal 2</option>
+                <option value="sucursal3">Sucursal 3</option>
+            </select>
+       
+            <label for="personas">Número de Personas</label>
+            <input type="number" id="personas" name="personas">
+
+            <label for="nenes">Número de Niños</label>
+            <input type="number" id="nenes" name="nenes">
+            
+            <label for="fecha">Fecha</label>
+            <input type="date" id="fecha" name="fecha">
+
+            <label for="hora">Hora</label>
+            <input type="time" id="hora" name="hora">
+
+            <button class="button" type="submit">Buscar mesas disponibles</button>
+
+          </div>
+        </form>
+        </div>
+      </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+      <div class="container__footer">
+        <div class="box__footer">
+          <div class="logo">
+            <img src="assets/images/footer.png" alt="" />
+          </div>
+          <div class="terms">
+            <p>
+              Somos un restaurante mexicano único en Managua, Nicaragua, que
+              ofrece una experiencia gastronómica auténtica y vibrante. Calavera
+              se destaca por su ambiente acogedor y su apasionada dedicación a
+              la cocina tradicional mexicana.
+            </p>
+          </div>
+        </div>
+        <div class="box__footer">
+          <h4>Horarios</h4>
+          <p>
+            Lunes:cerrado <br /><br />Martes-Viernes<br />11:00 am a 10 pm<br /><br />Sabados-Domingos<br />10:00
+            am a 12:00 pm
+          </p>
+        </div>
+
+        <div class="box__footer">
+          <h4>Contáctanos</h4>
+          <p>
+            Teléfono convencional <br />
+            +505 <br /><br />
+            Whatsapp <br />
+            +505
+          </p>
+        </div>
+
+        <div class="box__footer">
+          <h4>Redes Sociales</h4>
+          <a
+            href="https://www.instagram.com/restaurante_calavera/"
+            target="_blank"
+            ><span class="jam jam-instagram">Instagram</span></a
+          >
+          <a
+            href="https://www.facebook.com/profile.php?id=100092392609908"
+            target="_blank"
+            ><span class="jam jam-facebook">Facebook</span></a
+          >
+          <a href="https://twitter.com/RestCalavera" target="_blank"
+            ><span class="jam jam-twitter">Twitter</span></a
+          >
+          <a href="#" target="_blank"
+            ><span class="jam jam-whatsapp">Whatsapp</span></a
+          >
+        </div>
+      </div>
+
+      <div class="box__copyright">
+        <p>Todos los derechos reservados © 2024 <b>Restaurante Calavera</b></p>
+      </div>
+    </footer>
+
+    <script src="assets/js/reservas.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  </body>
+</html>

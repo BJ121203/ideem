@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
+    <link rel="shortcut icon" type="image/x-icon" href="assets/images/icon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&family=Tilt+Neon&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/jam-icons/css/jam.min.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <title>Restaurante Calavera</title>
+</head>
+<body class="index">
+
+  <!-- Cabecera -->
+    <header class="main-header">
+        <div class="content-wrapper">
+          <a href="index.html">
+            <img src="assets/images/nav2.png" alt="Logo Calavera">
+          </a>
+          <span id="open-menu-button" class="jam jam-menu"></span>
+          <nav id="main-menu" class="main-menu">
+            <span id="close-menu-button" class="jam jam-close"></span>
+            <ul>
+              <li>
+                <a href="index.html">Inicio</a>
+              </li>
+              
+              <li>
+                <a href="assets/menu.pdf"  target="_blank">Menu</a>
+              </li>
+              <li>
+                <a href="pedidos.html">Pide online</a>
+              </li>
+              <li>
+                <a href="reservas.html">Reservas</a>
+              </li>
+              <li>
+                <a href="eventos.html">Eventos</a>
+              </li>
+              <li>
+                <a href="registro.html">Registrate</a>
+              </li>
+            </ul>
+            <div class="user-nav">
+              <a href="cuenta.html"><span class="jam jam-user-circle"></span></a>
+              <a href="carrito.html"><span class="jam jam-shopping-cart"></span></a>
+            </div>
+          </nav>
+        </div>
+    </header>
+      
+    
+    <main>
+      <!-- Slider principal -->
+      <div class= "slider-wrapper section-container"> 
+        <div class="slider">
+          <div class="list">
+          <div class="item">
+              <img src="assets/images/slider1.png" alt="">
+          </div>
+          <div class="item">
+              <img src="assets/images/slider2.png" alt="">
+          </div>
+          <div class="item">
+              <img src="assets/images/slider3.png" alt="">
+          </div>
+          </div>
+        <div class="buttons">
+          <button id="prev"><</button>
+          <button id="next">></button>
+        </div>
+        <ul class="dots">
+          <li class="active"></li>
+          <li></li>
+          <li></li>
+      </ul>
+      </div>
+    </div>   
+
+    <!-- Platillos destacados -->
+      <section class="section-container last-projects">
+        <h2>Conoce las especialidades de la casa <br> Sabores 100% mexicanos</h2>
+        
+        <div class="container__cards">
+
+          <div class="card1">
+              <div class="cover">
+                  <img src="assets/images/birria.jpg" alt="">
+              </div>
+              <div class="description">
+                  <h3>Tacos de Birria</h3>
+                  <p>Preparados con carne de res tierna y sabrosa, cocida lentamente en una mezcla de especias y chiles secos</p>
+                  <a class="button" href="pedidos.html">Agregar al carrito</a>
+              </div>
+          </div>
+
+          <div class="card1">
+              <div class="cover">
+                  <img src="assets/images/chimichangas.jpg" alt="">
+                  <div class="img__back"></div>
+              </div>
+              <div class="description">
+                  <h3>Chimichangas</h3>
+                  <p>Elaboradas con tortillas de trigo rellenas con una mezcla de carne de res o pollo sazonada con especias auténticas</p>
+                  <a class="button" href="pedidos.html">Agregar al carrito</a>
+              </div>
+          </div>
+
+          <div class="card1">
+              <div class="cover">
+                  <img src="assets/images/chilaquiles.jpg" alt="">
+                  <div class="img__back"></div>
+              </div>
+              <div class="description">
+                  <h3>Chilaquiles</h3>
+                  <p>Crujientes triángulos de tortilla con una salsa de chile rojo o verde, complementados con queso fresco, carne y crema</p>
+                  <a class="button" href="pedidos.html">Agregar al carrito</a>
+              </div>
+          </div>
+
+        </div>
+
+        <a class="button white" href="pedidos.html">Ordena ya mismo desde nuestra página web!</a> 
+      </section>
+
+      
+        <!--  Registrate  -->
+        <section class="section-container about-section">
+          <div class="content-wrapper">
+            <h2>¡Únete a la Comunidad de Calaveritos!</h2>
+            <p> ¿Aún no te has registrado en nuestra página? ¡Es el momento perfecto para hacerlo! <br>
+            Al unirte a nuestra comunidad, podrás disfrutar de numerosos beneficios y mantenerte al tanto de todas nuestras novedades</p>
+            <div class="img-container">
+              <img src="assets/images/calaverito.jpg" alt="">
+            </div>
+            <a class="button white" href="register.html">Registrate ya mismo!</a>
+          </div>
+        </section>
+
+        <!-- Nuestros servicios -->
+        <section class="services-section section-container">
+          <h2>Nuestros servicios</h2>
+          <div class="content-wrapper">
+            <article class="service-item">
+              <span class="jam jam-rocket"></span>
+              <h3>Pide ya</h3>
+              <p>Haz tu pedido desde la comodidad de tu casa</p>
+            </article>
+            <article class="service-item">
+              <span class="jam jam-check"></span>
+              <h3>Reserva ya</h3>
+              <p>Haz tu reserva hoy y únete a nosotros para disfrutar de sabores únicos y momentos inolvidables</p>
+            </article>
+            <article class="service-item">
+              <span class="jam jam-candle"></span>
+              <h3>Celebra tus momentos especiales</h3>
+              <p>Permítenos ser parte de tus momentos más importantes y haz de tu celebración una experiencia memorable</p>
+            </article>
+          </div>
+        </section>
+
+        <!-- Ubicacion  -->
+        <section class="ubication-section section-container">
+          <div class="itemInfo ubication-item">
+            <h3>¡Reserva Ahora y Asegura tu Mesa!</h3>
+            <p>Reserva tu mesa hoy mismo y prepárate para una experiencia gastronómica de calidad <br>
+              Haz tu reserva llamando al +505 o a pulsando el siguiente boton</p>
+            <a class="button white" href="reservas.html">Reserva ya mismo!</a>
+            
+
+          </div>
+          <div class="itemUbi ubication-item">
+              <h3>Ubicación de nuestro local</h3>
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3900.711887058591!2d-86.27239662415067!3d12.131854832730777!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f7155e45947c2c5%3A0x8eaf963e036e7444!2sUniversidad%20Nacional%20de%20Ingeniería%20(UNI)!5e0!3m2!1ses-419!2sni!4v1716359906825!5m2!1ses-419!2sni" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+        </section>
+
+
+      <script src="assets/js/sliderp.js"></script>
+    </main>
+
+    <!-- Footer -->
+      <footer> 
+        <div class="container__footer">
+          <div class="box__footer">
+              <div class="logo">
+                  <img src="assets/images/footer.png" alt="">
+              </div>
+              <div class="terms">
+                  <p>Somos un restaurante mexicano único en Managua, Nicaragua, que ofrece una experiencia gastronómica auténtica y vibrante. Calavera se destaca por su ambiente acogedor y su apasionada dedicación a la cocina tradicional mexicana.</p>
+              </div>
+          </div>
+          <div class="box__footer">
+              <h4>Horarios</h4>
+              <p>Lunes:cerrado <br><br>Martes-Viernes<br>11:00 am a 10 pm<br><br>Sabados-Domingos<br>10:00 am a 12:00 pm</p>
+          </div>
+
+          <div class="box__footer">
+              <h4>Contáctanos</h4>
+              <p>Teléfono convencional <br> +505 <br><br> Whatsapp <br> +505 </p>            
+          </div>
+
+          <div class="box__footer">
+              <h4>Redes Sociales</h4>
+              <a href="https://www.instagram.com/restaurante_calavera/" target="_blank"><span class="jam jam-instagram">Instagram</span></a>
+              <a href="https://www.facebook.com/profile.php?id=100092392609908" target="_blank"><span class="jam jam-facebook">Facebook</span></a>
+              <a href="https://twitter.com/RestCalavera" target="_blank"><span class="jam jam-twitter">Twitter</span></a>
+              <a href="#" target="_blank"><span class="jam jam-whatsapp">Whatsapp</span></a>   
+          </div>
+
+      </div>
+
+      <div class="box__copyright">
+          <p>Todos los derechos reservados © 2024 <b>Restaurante Calavera</b></p>
+      </div>
+      </footer>
+
+</body>
+</html>

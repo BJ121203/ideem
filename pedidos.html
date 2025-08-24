@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://necolas.github.io/normalize.css/8.0.1/normalize.css"
+    />
+    <link
+      rel="shortcut icon"
+      type="image/x-icon"
+      href="assets/images/icon.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&family=Tilt+Neon&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://unpkg.com/jam-icons/css/jam.min.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="assets/css/styles.css" />
+    <title>Pide online</title>
+  </head>
+  <body>
+    <!-- Cabecera -->
+    <header class="main-header">
+      <div class="content-wrapper">
+        <a href="index.html">
+          <img src="assets/images/nav2.png" alt="Logo Calavera" />
+        </a>
+        <span id="open-menu-button" class="jam jam-menu"></span>
+        <nav id="main-menu" class="main-menu">
+          <span id="close-menu-button" class="jam jam-close"></span>
+          <ul>
+            <li>
+              <a href="index.html">Inicio</a>
+            </li>
+
+            <li>
+              <a href="assets/menu.pdf" target="_blank">Menu</a>
+            </li>
+            <li>
+              <a href="pedidos.html">Pide online</a>
+            </li>
+            <li>
+              <a href="reservas.html">Reservas</a>
+            </li>
+            <li>
+              <a href="eventos.html">Eventos</a>
+            </li>
+            <li>
+              <a href="registro.html">Registrate</a>
+            </li>
+          </ul>
+          <div class="user-nav">
+            <a href="cuenta.html"><span class="jam jam-user-circle"></span></a>
+            <a href="carrito.html"
+              ><span class="jam jam-shopping-cart"></span
+            ></a>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <nav class="navbar navbar-expand-lg navbar-light sticky-top">
+        <div>
+          <a class="navbar-brand" href="#"
+            >Explora nuestros deliciosos platillos</a
+          >
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="collapse navbar-collapse justify-content-center"
+            id="navbarNav"
+          >
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" href="#entradas">Entradas</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#platos-principales"
+                  >Platos Principales</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#postres">Postres</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#bebidas">Bebidas</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <section class="sectionPlatillos" id="platillosPrincipales">
+        <h2>Platos Principales</h2>
+          <!-- Contenedor de las cards -->
+          <div class="container__cards mb-2">
+            <!-- Platillos -->
+            <div class="card1">
+              <div class="cover">
+                  <img src="assets/images/birria.jpg" alt="" />
+              </div>
+              <div class="description">
+                  <h3>Tacos de Birria</h3>
+                  <p>
+                      Preparados con carne de res tierna y sabrosa, cocida lentamente en una mezcla de especias y chiles secos
+                  </p>
+                  <p>C$ <span class="price">250</span></p>
+                  <button class="button addToCart" data-id="birria">Agregar al carrito</button>
+              </div>
+            </div>
+          
+          <div class="card1">
+              <div class="cover">
+                  <img src="assets/images/chimichangas.jpg" alt="" />
+              </div>
+              <div class="description">
+                  <h3>Chimichangas</h3>
+                  <p>
+                      Elaboradas con tortillas de trigo rellenas con una mezcla de carne de res o pollo sazonada con especias auténticas
+                  </p>
+                  <p>C$ <span class="price">250</span></p>
+                  <button class="button addToCart" data-id="chimichangas">Agregar al carrito</button>
+              </div>
+          </div>
+          
+          <div class="card1">
+              <div class="cover">
+                  <img src="assets/images/chilaquiles.jpg" alt="" />
+              </div>
+              <div class="description">
+                  <h3>Chilaquiles</h3>
+                  <p>
+                      Crujientes triángulos de tortilla con una salsa de chile rojo o verde, complementados con queso fresco, carne y crema
+                  </p>
+                  <p>C$ <span class="price">250</span></p>
+                  <button class="button addToCart" data-id="chilaquiles">Agregar al carrito</button>
+              </div>
+          </div>
+
+          <div class="card1">
+            <div class="cover">
+                <img src="assets/images/pastor.jpg" alt="" />
+            </div>
+            <div class="description">
+                <h3>Tacos al pastor</h3>
+                <p>
+                  Deliciosos tacos al pastor con carne de cerdo marinada en una mezcla de chiles y especias, asada al estilo tradicional en un trompo vertical. Servidos en tortillas de maíz, acompañados de piña jugosa, cebolla, cilantro fresco y una variedad de salsas para un toque final perfecto
+                </p>
+                <p>C$ <span class="price">300</span></p>
+                <button class="button addToCart" data-id="chilaquiles">Agregar al carrito</button>
+            </div>
+          </div>
+
+          <div class="card1">
+            <div class="cover">
+                <img src="assets/images/canasta.jpg" alt="" />
+            </div>
+            <div class="description">
+                <h3>Tacos de canasta</h3>
+                <p>
+                  Sabrosos tacos de canasta rellenos de guisados tradicionales como chicharrón, frijoles, papa con chorizo, y adobo. Servidos en tortillas de maíz suaves y bañados en aceite caliente, estos tacos se presentan en una canasta forrada, manteniendo su calidez y sabor
+                </p>
+                <p>C$ <span class="price">250</span></p>
+                <button class="button addToCart" data-id="chilaquiles">Agregar al carrito</button>
+            </div>
+          </div>
+
+          <div class="card1">
+            <div class="cover">
+                <img src="assets/images/quesabirria.jpg" alt="" />
+            </div>
+            <div class="description">
+                <h3>Quesabirrias</h3>
+                <p>
+                  Rellenas de jugosa carne de res cocida a fuego lento en un consomé de chiles y especias, estas tortillas de maíz vienen cubiertas con queso derretido, doradas a la perfección en la plancha. Acompañadas de consomé caliente para sumergir y disfrutar de cada bocado
+                </p>
+                <p>C$ <span class="price">250</span></p>
+                <button class="button addToCart" data-id="chilaquiles">Agregar al carrito</button>
+            </div>
+          </div>
+
+
+
+    
+      </section>
+    </main>
+
+    <footer>
+      <div class="container__footer">
+        <div class="box__footer">
+          <div class="logo">
+            <img src="assets/images/footer.png" alt="" />
+          </div>
+          <div class="terms">
+            <p>
+              Somos un restaurante mexicano único en Managua, Nicaragua, que
+              ofrece una experiencia gastronómica auténtica y vibrante. Calavera
+              se destaca por su ambiente acogedor y su apasionada dedicación a
+              la cocina tradicional mexicana.
+            </p>
+          </div>
+        </div>
+        <div class="box__footer">
+          <h4>Horarios</h4>
+          <p>
+            Lunes:cerrado <br /><br />Martes-Viernes<br />11:00 am a 10 pm<br /><br />Sabados-Domingos<br />10:00
+            am a 12:00 pm
+          </p>
+        </div>
+
+        <div class="box__footer">
+          <h4>Contáctanos</h4>
+          <p>
+            Teléfono convencional <br />
+            +505 <br /><br />
+            Whatsapp <br />
+            +505
+          </p>
+        </div>
+
+        <div class="box__footer">
+          <h4>Redes Sociales</h4>
+          <a
+            href="https://www.instagram.com/restaurante_calavera/"
+            target="_blank"
+            ><span class="jam jam-instagram">Instagram</span></a
+          >
+          <a
+            href="https://www.facebook.com/profile.php?id=100092392609908"
+            target="_blank"
+            ><span class="jam jam-facebook">Facebook</span></a
+          >
+          <a href="https://twitter.com/RestCalavera" target="_blank"
+            ><span class="jam jam-twitter">Twitter</span></a
+          >
+          <a href="#" target="_blank"
+            ><span class="jam jam-whatsapp">Whatsapp</span></a
+          >
+        </div>
+      </div>
+
+      <div class="box__copyright">
+        <p>Todos los derechos reservados © 2024 <b>Restaurante Calavera</b></p>
+      </div>
+    </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    <script src="assets/js/pedidos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  </body>
+</html>

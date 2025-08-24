@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://necolas.github.io/normalize.css/8.0.1/normalize.css"
+    />
+    <link
+      rel="shortcut icon"
+      type="image/x-icon"
+      href="assets/images/icon.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&family=Tilt+Neon&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://unpkg.com/jam-icons/css/jam.min.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="assets/css/styles.css" />
+    <title>Cotiza tu evento</title>
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="main-header">
+      <div class="content-wrapper">
+        <a href="index.html">
+          <img src="assets/images/nav2.png" alt="Logo Calavera" />
+        </a>
+        <span id="open-menu-button" class="jam jam-menu"></span>
+        <nav id="main-menu" class="main-menu">
+          <span id="close-menu-button" class="jam jam-close"></span>
+          <ul>
+            <li>
+              <a href="index.html">Inicio</a>
+            </li>
+
+            <li>
+              <a href="assets/menu.pdf" target="_blank">Menu</a>
+            </li>
+            <li>
+              <a href="pedidos.html">Pide online</a>
+            </li>
+            <li>
+              <a href="reservas.html">Reservas</a>
+            </li>
+            <li>
+              <a href="eventos.html">Eventos</a>
+            </li>
+            <li>
+              <a href="registro.html">Registrate</a>
+            </li>
+          </ul>
+          <div class="user-nav">
+            <a href="cuenta.html"><span class="jam jam-user-circle"></span></a>
+            <a href="carrito.html"><span class="jam jam-shopping-cart"></span></a>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Principal -->
+    <main>
+      <div class="containerEventos">
+        <div class="reservaForm">
+          <h2>¡Descubre las increíbles áreas del Restaurante Calavera!</h2>
+          <div class= " mt-2 mb-5">
+            <div class="row">
+              <div class="col-md-4">
+                <div class="card h-100">
+                  <img
+                    src="assets/images/jardin.jpeg"
+                    class="card-img-top"
+                    alt="Imagen 1"
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title">El Jardín de los Sabores</h5>
+                    <p class="card-text">
+                      Un área al aire libre rodeada de hermosos jardines donde
+                      podrás sumergirte en un ambiente tranquilo y relajante
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="card h-100">
+                  <img
+                    src="assets/images/cantinamariachi.jpeg"
+                    class="card-img-top"
+                    alt="Imagen 2"
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title">La Cantina del Mariachi</h5>
+                    <p class="card-text">
+                      Un área inspirada en las tradicionales cantinas mexicanas,
+                      con música en vivo de mariachis y una amplia selección de
+                      tequilas y mezcales
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="card h-100">
+                  <img
+                    src="assets/images/haciendaazul.jpeg"
+                    class="card-img-top"
+                    alt="Imagen 3"
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title">La Hacienda Azul</h5>
+                    <p class="card-text">
+                      Un área que evoca la elegancia y el encanto de una
+                      hacienda mexicana, con una decoración rústica y detalles
+                      tradicionales
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <h3>¡Queremos ayudarte a planificar el evento perfecto! <br>
+            Completa el siguiente formulario para obtener una cotización personalizada</h3>
+
+          <form id="eventosForm" class="eventos-form">
+
+            <!-- Columna 1 -->
+            <div class="item item1">
+
+              <label for="nombre">Nombre completo</label>
+              <input type="text" id="nombre" placeholder="Introduce tu nombre o de tu empresas">
+
+              <label for="number">Número de teléfono</label>
+              <input type="text" id="number" placeholder="Introduce tu número">
+
+              <label for="email">Email</label>
+              <input type="email" id="email" placeholder="Introduce tu correo">
+
+              <label for="fecha">Fecha</label>
+              <input type="date" id="fecha" name="fecha" >
+
+              <label for="duracionEvento">Duración del Evento (días)</label>
+              <input type="number" class="form-control" id="duracionEvento" name="duracionEvento" min="1">
+
+              <label for="horaInicio">Hora de inicio</label>
+              <input type="time" id="horaInicio" name="horaInicio">
+
+              <label for="horaFin">Hora de fin</label>
+              <input type="time" id="horaFin" name="horaFin">
+
+              <label for="sucursal">Seleccione la sucursal</label>
+              <select id="sucursal" name="sucursal">
+                <option value="">Seleccione una sucursal</option>
+                <option value="sucursal1">Sucursal 1</option>
+                <option value="sucursal2">Sucursal 2</option>
+                <option value="sucursal3">Sucursal 3</option>
+              </select>
+
+              <label for="personas">Número de invitados mayores de edad</label>
+              <input type="number" id="personas" name="personas">
+
+              <label for="nenes">Número de invitados menores de edad</label>
+              <input type="number" id="nenes" name="nenes">
+
+            </div>
+
+            <!-- Columna 2 -->
+
+            <div class="item  item2">
+
+              <label for="evento">Tipo de evento</label>
+              <input type="text" id="evento" placeholder="Introduce el tipo de evento">
+
+              <label for="tipoMenu">Tipo de Menú</label>
+              <select class="form-control" id="tipoMenu" name="tipoMenu">
+                <option value="">Seleccione un tipo de menú</option>
+                <option value="buffet">Buffet</option>
+                <option value="a_la_carta">A la Carta</option>
+              </select>
+
+              <label for="tipoBebidas">Tipo de Bebidas</label>
+                <select class="form-control" id="tipoBebidas" name="tipoBebidas">
+                  <option value="">Seleccione un tipo de bebidas</option>
+                  <option value="bebidas_alcoholicas">Con Bebidas Alcohólicas</option>
+                  <option value="bebidas_no_alcoholicas">Solo Bebidas No Alcohólicas</option>
+                </select>
+
+              <div class="form-group">
+                <label>Seleccione las zonas que desea reservas</label>
+                <div class="form-check">
+                    <input type="checkbox" class="form-check-input" name="zona1" value="zona1" id="zona1">
+                    <label class="form-check-label" for="zona1">El Jardin de los Sabores</label>
+                </div>
+                <div class="form-check">
+                  <input type="checkbox" class="form-check-input" name="zona2" value="zona2" id="zona2">
+                  <label class="form-check-label" for="zona2">La Cantina del Mariachi</label>
+                </div>
+                <div class="form-check">
+                  <input type="checkbox" class="form-check-input" name="zona3" value="zona3" id="zona3">
+                  <label class="form-check-label" for="zona3">La Hacienda Azul</label>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label>Seleccione si desea algun servicio adicional</label>
+                <div class="form-check">
+                    <input type="checkbox" class="form-check-input" name="serviciosAdicionales" value="dj" id="dj">
+                    <label class="form-check-label" for="dj">DJ</label>
+                </div>
+                <div class="form-check">
+                    <input type="checkbox" class="form-check-input" name="serviciosAdicionales" value="decoracion" id="decoracion">
+                    <label class="form-check-label" for="decoracion">Decoración Temática</label>
+                </div>
+                <div class="form-check">
+                    <input type="checkbox" class="form-check-input" name="serviciosAdicionales" value="animadores" id="animadores">
+                    <label class="form-check-label" for="animadores">Animadores</label>
+                </div>
+                <div class="form-check">
+                    <input type="checkbox" class="form-check-input" name="serviciosAdicionales" value="equipo_audio" id="equipo_audio">
+                    <label class="form-check-label" for="equipo_audio">Equipo de Audio</label>
+                </div>
+                <div class="form-check">
+                    <input type="checkbox" class="form-check-input" name="serviciosAdicionales" value="fotografia_video" id="fotografia_video">
+                    <label class="form-check-label" for="fotografia_video">Fotografía y Video</label>
+                </div>
+                <div class="form-check">
+                    <input type="checkbox" class="form-check-input" name="serviciosAdicionales" value="catering_postres" id="catering_postres">
+                    <label class="form-check-label" for="catering_postres">Catering de Postres</label>
+                </div>
+                <div class="form-check">
+                    <input type="checkbox" class="form-check-input" name="serviciosAdicionales" value="seguridad" id="seguridad">
+                    <label class="form-check-label" for="seguridad">Seguridad</label>
+                </div>
+                <div class="form-check">
+                    <input type="checkbox" class="form-check-input" name="serviciosAdicionales" value="florista" id="florista">
+                    <label class="form-check-label" for="florista">Florista</label>
+                </div>
+                <div class="form-check">
+                    <input type="checkbox" class="form-check-input" name="serviciosAdicionales" value="mobiliario_extra" id="mobiliario_extra">
+                    <label class="form-check-label" for="mobiliario_extra">Mobiliario Extra</label>
+                </div>
+            </div>
+
+        
+            </div>
+
+            <!-- Boton -->
+            <div class="item3">
+              <button class="button" onclick="calcularCotizacion()" type="submit">
+                Cotize su evento ya mismo
+              </button>
+              <div class="carritoEventos" id="cotizaciontotal">
+                <!-- Info de las cotizaciones -->
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+      <div class="container__footer">
+        <div class="box__footer">
+          <div class="logo">
+            <img src="assets/images/footer.png" alt="" />
+          </div>
+          <div class="terms">
+            <p>
+              Somos un restaurante mexicano único en Managua, Nicaragua, que
+              ofrece una experiencia gastronómica auténtica y vibrante. Calavera
+              se destaca por su ambiente acogedor y su apasionada dedicación a
+              la cocina tradicional mexicana.
+            </p>
+          </div>
+        </div>
+        <div class="box__footer">
+          <h4>Horarios</h4>
+          <p>
+            Lunes:cerrado <br /><br />Martes-Viernes<br />11:00 am a 10 pm<br /><br />Sabados-Domingos<br />10:00
+            am a 12:00 pm
+          </p>
+        </div>
+
+        <div class="box__footer">
+          <h4>Contáctanos</h4>
+          <p>
+            Teléfono convencional <br />
+            +505 <br /><br />
+            Whatsapp <br />
+            +505
+          </p>
+        </div>
+
+        <div class="box__footer">
+          <h4>Redes Sociales</h4>
+          <a
+            href="https://www.instagram.com/restaurante_calavera/"
+            target="_blank"
+            ><span class="jam jam-instagram">Instagram</span></a
+          >
+          <a
+            href="https://www.facebook.com/profile.php?id=100092392609908"
+            target="_blank"
+            ><span class="jam jam-facebook">Facebook</span></a
+          >
+          <a href="https://twitter.com/RestCalavera" target="_blank"
+            ><span class="jam jam-twitter">Twitter</span></a
+          >
+          <a href="#" target="_blank"
+            ><span class="jam jam-whatsapp">Whatsapp</span></a
+          >
+        </div>
+      </div>
+
+      <div class="box__copyright">
+        <p>Todos los derechos reservados © 2024 <b>Restaurante Calavera</b></p>
+      </div>
+    </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="assets/js/eventos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  </body>
+</html>

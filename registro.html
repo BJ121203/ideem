@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://necolas.github.io/normalize.css/8.0.1/normalize.css"
+    />
+    <link
+      rel="shortcut icon"
+      type="image/x-icon"
+      href="assets/images/icon.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&family=Tilt+Neon&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="https://unpkg.com/jam-icons/css/jam.min.css" />
+    <link rel="stylesheet" href="assets/css/styles.css" />
+    <title>Registro</title>
+  </head>
+  <body>
+    <!-- Cabecera -->
+    <header class="main-header">
+      <div class="content-wrapper">
+        <a href="index.html">
+          <img src="assets/images/nav2.png" alt="Logo Calavera" />
+        </a>
+        <span id="open-menu-button" class="jam jam-menu"></span>
+        <nav id="main-menu" class="main-menu">
+          <span id="close-menu-button" class="jam jam-close"></span>
+          <ul>
+            <li>
+              <a href="index.html">Inicio</a>
+            </li>
+
+            <li>
+              <a href="assets/menu.pdf" target="_blank">Menu</a>
+            </li>
+            <li>
+              <a href="pedidos.html">Pide online</a>
+            </li>
+            <li>
+              <a href="reservas.html">Reservas</a>
+            </li>
+            <li>
+              <a href="eventos.html">Eventos</a>
+            </li>
+            <li>
+              <a href="register.html">Registrate</a>
+            </li>
+          </ul>
+          <div class="user-nav">
+            <a href="cuenta.html"><span class="jam jam-user-circle"></span></a>
+            <a href="carrito.html"><span class="jam jam-shopping-cart"></span></a>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <div class="containerRegistro">
+        <div class="container p-0">
+          <div class="row justify-content-center mt-5">
+            <div class="col-md-3 p-0">
+                <div class="card  justify-content-center h-100 wrapperCalaverito">
+                    <div class="content">
+                        <div class="img-container">
+                            <img src="assets/images/calaverito.jpg" alt="">
+                        </div>
+                        <p>Por ser un calaverito obtienes muchos beneficios!!</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 p-0">
+              <div class="card h-100">
+                <div class="card-header">
+                  <ul
+                    class="nav nav-tabs card-header-tabs"
+                    id="myTab"
+                    role="tablist"
+                  >
+                    <li class="nav-item">
+                      <a
+                        class="nav-link active"
+                        id="login-tab"
+                        data-toggle="tab"
+                        href="#login"
+                        role="tab"
+                        aria-controls="login"
+                        aria-selected="true"
+                        >Ingresar</a
+                      >
+                    </li>
+                    <li class="nav-item">
+                      <a
+                        class="nav-link"
+                        id="register-tab"
+                        data-toggle="tab"
+                        href="#register"
+                        role="tab"
+                        aria-controls="register"
+                        aria-selected="false"
+                        >Crear Cuenta</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+                <div class="card-body">
+                  <div class="tab-content" id="myTabContent">
+                    <!-- Login -->
+                    <div
+                      class="tab-pane fade show active"
+                      id="login"
+                      role="tabpanel"
+                      aria-labelledby="login-tab"
+                    >
+                      <form>
+                        <div class="form-group">
+                          <label for="loginEmail">Correo Electrónico</label>
+                          <input
+                            type="email"
+                            class="form-control"
+                            id="loginEmail"
+                            placeholder="Ingrese su correo electrónico"
+                          />
+                        </div>
+                        <div class="form-group">
+                          <label for="loginPassword">Contraseña</label>
+                          <input
+                            type="password"
+                            class="form-control"
+                            id="loginPassword"
+                            placeholder="Ingrese su contraseña"
+                          />
+                        </div>
+                        <button type="submit" class="btn btn-primary">
+                          Ingresar
+                        </button>
+                      </form>
+                    </div>
+                    <!-- Registro -->
+                    <div
+                      class="tab-pane fade"
+                      id="register"
+                      role="tabpanel"
+                      aria-labelledby="register-tab"
+                    >
+                      <form id="registerForm">
+                        <div class="form-group">
+                          <label for="registerName">Nombres</label>
+                          <input
+                            type="text"
+                            class="form-control"
+                            id="registerName"
+                            placeholder="Ingrese sus nombres"
+                          />
+                        </div>
+                        <div class="form-group">
+                          <label for="registerName">Apellidos</label>
+                          <input
+                            type="text"
+                            class="form-control"
+                            id="registerLastname"
+                            placeholder="Ingrese sus apellidos"
+                          />
+                        </div>
+
+                        <div class="form-group">
+                          <label for="registerEmail">Número telefónico</label>
+                          <input
+                            type="text"
+                            class="form-control"
+                            id="registerNumber"
+                            placeholder="Ingrese su número telefónico"
+                          />
+                        </div>
+                        <div class="form-group">
+                          <label for="gender">Género</label>
+                          <select
+                            class="form-control"
+                            id="registerGender"
+                            name="gender"
+                          >
+                            <option value="">Seleccione su género</option>
+                            <option value="male">Masculino</option>
+                            <option value="female">Femenino</option>
+                            <option value="prefer-not-to-say">
+                              Prefiero no decir
+                            </option>
+                          </select>
+                        </div>
+                        <div class="form-group">
+                          <label for="registerEmail">Correo Electrónico</label>
+                          <input
+                            type="email"
+                            class="form-control"
+                            id="registerEmail"
+                            placeholder="Ingrese su correo electrónico"
+                          />
+                        </div>
+                        <div class="form-group">
+                          <label for="registerPassword">Contraseña</label>
+                          <input
+                            type="password"
+                            class="form-control"
+                            id="registerPassword"
+                            placeholder="Cree una contraseña"
+                          />
+                        </div>
+                        <div class="form-group">
+                          <label for="registerPassword"
+                            >Repita su contraseña</label
+                          >
+                          <input
+                            type="password"
+                            class="form-control"
+                            id="registerPasswordRepeat"
+                            placeholder="Repita la contraseña"
+                          />
+                        </div>
+                        <button type="submit" class="btn btn-primary">
+                          Crear Cuenta
+                        </button>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+      <div class="container__footer">
+        <div class="box__footer">
+          <div class="logo">
+            <img src="assets/images/footer.png" alt="" />
+          </div>
+          <div class="terms">
+            <p>
+              Somos un restaurante mexicano único en Managua, Nicaragua, que
+              ofrece una experiencia gastronómica auténtica y vibrante. Calavera
+              se destaca por su ambiente acogedor y su apasionada dedicación a
+              la cocina tradicional mexicana.
+            </p>
+          </div>
+        </div>
+        <div class="box__footer">
+          <h4>Horarios</h4>
+          <p>
+            Lunes:cerrado <br /><br />Martes-Viernes<br />11:00 am a 10 pm<br /><br />Sabados-Domingos<br />10:00
+            am a 12:00 pm
+          </p>
+        </div>
+
+        <div class="box__footer">
+          <h4>Contáctanos</h4>
+          <p>
+            Teléfono convencional <br />
+            +505 <br /><br />
+            Whatsapp <br />
+            +505
+          </p>
+        </div>
+
+        <div class="box__footer">
+          <h4>Redes Sociales</h4>
+          <a
+            href="https://www.instagram.com/restaurante_calavera/"
+            target="_blank"
+            ><span class="jam jam-instagram">Instagram</span></a
+          >
+          <a
+            href="https://www.facebook.com/profile.php?id=100092392609908"
+            target="_blank"
+            ><span class="jam jam-facebook">Facebook</span></a
+          >
+          <a href="https://twitter.com/RestCalavera" target="_blank"
+            ><span class="jam jam-twitter">Twitter</span></a
+          >
+          <a href="#" target="_blank"
+            ><span class="jam jam-whatsapp">Whatsapp</span></a
+          >
+        </div>
+      </div>
+
+      <div class="box__copyright">
+        <p>Todos los derechos reservados © 2024 <b>Restaurante Calavera</b></p>
+      </div>
+    </footer>
+  
+    <script src="assets/js/login.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  </body>
+</html>

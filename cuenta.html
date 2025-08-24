@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://necolas.github.io/normalize.css/8.0.1/normalize.css"
+    />
+    <link
+      rel="shortcut icon"
+      type="image/x-icon"
+      href="assets/images/icon.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&family=Tilt+Neon&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://unpkg.com/jam-icons/css/jam.min.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="assets/css/styles.css" />
+    <title>Mi Cuenta</title>
+  </head>
+  <body>
+    <!-- Cabecera -->
+    <header class="main-header">
+      <div class="content-wrapper">
+        <a href="index.html">
+          <img src="assets/images/nav2.png" alt="Logo Calavera" />
+        </a>
+        <span id="open-menu-button" class="jam jam-menu"></span>
+        <nav id="main-menu" class="main-menu">
+          <span id="close-menu-button" class="jam jam-close"></span>
+          <ul>
+            <li>
+              <a href="index.html">Inicio</a>
+            </li>
+
+            <li>
+              <a href="assets/menu.pdf" target="_blank">Menu</a>
+            </li>
+            <li>
+              <a href="pedidos.html">Pide online</a>
+            </li>
+            <li>
+              <a href="reservas.html">Reservas</a>
+            </li>
+            <li>
+              <a href="eventos.html">Eventos</a>
+            </li>
+            <li>
+              <a href="registro.html">Registrate</a>
+            </li>
+          </ul>
+          <div class="user-nav">
+            <a href="cuenta.html"><span class="jam jam-user-circle"></span></a>
+            <a href="carrito.html"
+              ><span class="jam jam-shopping-cart"></span
+            ></a>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <!--Principal -->
+
+    <main>
+      <div class="containerCuentas">
+        <div class="container light-style flex-grow-1 container-p-y">
+          <h2>Ajustes de Cuenta</h2>
+          <div class="card overflow-hidden">
+            <div class="row no-gutters row-bordered row-border-light">
+              <div class="col-md-3 pt-0">
+                <div class="list-group list-group-flush account-settings-links">
+                  <a
+                    class="list-group-item list-group-item-action active"
+                    data-toggle="list"
+                    href="#account-general"
+                    >General</a
+                  >
+                  <a
+                    class="list-group-item list-group-item-action"
+                    data-toggle="list"
+                    href="#account-change-password"
+                    >Cambiar la contraseña</a
+                  >
+                  <a
+                    class="list-group-item list-group-item-action"
+                    data-toggle="list"
+                    href="#account-reservations"
+                    >Historial reservas</a
+                  >
+                  <a
+                    class="list-group-item list-group-item-action"
+                    data-toggle="list"
+                    href="#account-cotizaciones"
+                    >Historial cotizaciones</a
+                  >
+                  <a
+                    class="list-group-item list-group-item-action"
+                    data-toggle="list"
+                    href="#account-pedidos"
+                    >Historial pedidos</a
+                  >
+                </div>
+              </div>
+              <div class="col-md-9">
+                <div class="tab-content">
+                  <div class="tab-pane fade active show" id="account-general">
+                    <div class="cards-body mt-2 mb-2">
+                      <div class="form-group">
+                        <label class="form-label">Nombre completo</label>
+                        <input type="text" class="form-control mb-1" value="Leonel Alberto Tapia">
+                      </div>
+                      <div class="form-group">
+                        <label class="form-label">Número telefónico</label>
+                        <input
+                          type="text"
+                          class="form-control"
+                          value="25342444"
+                        />
+                      </div>
+                      <div class="form-group">
+                        <label class="form-label">E-mail</label>
+                        <input
+                          type="text"
+                          class="form-control mb-1"
+                          value="leo@mail.com"
+                        />
+                      </div>
+                      <div class="btnCentrar">
+                        <button class="button">Modificar información</button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="tab-pane fade" id="account-change-password">
+                    <div class="card-body mt-2">
+                      <div class="form-group">
+                        <label class="form-label">Contraseña actual</label>
+                        <input type="password" class="form-control" />
+                      </div>
+                      <div class="form-group">
+                        <label class="form-label">Nueva contraseña</label>
+                        <input type="password" class="form-control" />
+                      </div>
+                      <div class="form-group">
+                        <label class="form-label">Repita la nueva contraseña</label>
+                        <input type="password" class="form-control" />
+                      </div>
+                      <div class="btnCentrar">
+                        <button class="button">Cambiar</button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="tab-pane fade" id="account-reservations">
+                    <div class="card-body mt-2">
+                      <h3 class="mb-2">Historial de Reservas</h3>
+                      <table class="table table-striped text-center">
+                        <thead class="thead-dark">
+                          <tr>
+                            <th>Fecha</th>
+                            <th>Hora</th>
+                            <th>Sucursal</th>
+                            <th>Personas</th>
+                            <th>Mesas reservadas</th>
+                            <th>Ubicación</th>
+                            <th>Estado de la reserva</th>
+                            <th>Cancelar reserva</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>2024-03-21</td>
+                            <td>19:00</td>
+                            <td>Sucursal 1</td>
+                            <td>4</td>
+                            <td>2,3</td>
+                            <td>La cantina del mariachi</td>
+                            <td>Confirmada</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>2024-06-10</td>
+                            <td>13:00</td>
+                            <td>Sucursal 2</td>
+                            <td>6</td>
+                            <td>1</td>
+                            <td>La hacienda azul</td>
+                            <td>Cancelada</td>
+                            <td></td>
+                        </tr>
+                        <tr class="bg-warning">
+                            <td>2024-07-05</td>
+                            <td>20:30</td>
+                            <td>Sucursal 1</td>
+                            <td>10</td>
+                            <td>3,4</td>
+                            <td>La hacienda azul</td>
+                            <td>Pendiente</td>
+                            <td><button class="btn btn-danger btn-sm">Cancelar</button></td>
+                        </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                  <div class="tab-pane fade" id="account-cotizaciones">
+                    <div class="card-body mt-2">
+                      <h3 class="mb-2">Historial de Cotizaciones</h3>
+                      <table class="table table-striped text-center">
+                        <thead class="thead-dark text">
+                          <tr>
+                            <th>Fecha</th>
+                            <th>Dias</th>
+                            <th>Hora inicio/Hora fin</th>
+                            <th>Tipo de evento</th>
+                            <th>Sucursal</th>
+                            <th>Invitados</th>
+                            <th>Zonas reservadas</th>
+                            <th>Costo total</th>
+                            <th>Estado</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>2023-06-21</td>
+                            <td>1</td>
+                            <td>19:00 / 22:00</td>
+                            <td>Fiesta de cumpleaños</td>
+                            <td>Sucursal 1</td>
+                            <td>20</td>
+                            <td>El Jardin de los Sabores</td>
+                            <td>$500</td>
+                            <td>Realizado</td>
+                        </tr>
+                        <tr>
+                            <td>2023-07-10</td>
+                            <td>2</td>
+                            <td>13:00 / 17:00</td>
+                            <td>Conferencia</td>
+                            <td>Sucursal 2</td>
+                            <td>50</td>
+                            <td>El Jardin de los Sabores, La Hacienda Azul </td>
+                            <td>$1200</td>
+                            <td>Cancelado</td>
+                        </tr>
+                        <tr class="bg-warning">
+                            <td>2024-08-05</td>
+                            <td>1</td>
+                            <td>20:30 / 23:30</td>
+                            <td>Boda</td>
+                            <td>Sucursal 1</td>
+                            <td>100</td>
+                            <td>Todo el local</td>
+                            <td>$3000</td>
+                            <td>Pendiente de confirmación</td>
+                        </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                  <div class="tab-pane fade" id="account-pedidos">
+                    <div class="card-body mt-2">
+                      <h3 class="mb-2">Historial de Pedidos</h3>
+                      <table class="table table-striped text-center">
+                        <thead class="thead-dark text">
+                          <tr>
+                            <th>Fecha</th>
+                            <th>Número RUC</th>
+                            <th>Productos</th>
+                            <th>Tipo de Pago</th>
+                            <th>Costo Total</th>
+                            <th>Estado</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                          <tr">
+                              <td>2023-06-21</td>
+                              <td>N.A</td>
+                              <td>
+                                  <table class="table table-borderless text-center m-0">
+                                      <tr><td>Chilaquiles</td><td>1</td></tr>
+                                      <tr><td>Quesabirrias</td><td>1</td></tr>
+                                  </table>
+                              </td>
+                              <td>Tarjeta de Crédito</td>
+                              <td>$25</td>
+                              <td>Entregado</td>
+                          </tr>
+                          <tr>
+                            <td>2024-02-21</td>
+                            <td>0987654321</td>
+                            <td>
+                                <table class="table table-borderless text-center m-0">
+                                    <tr><td>Chilaquiles</td><td>1</td></tr>
+                                    <tr><td>Quesadillas</td><td>2</td></tr>
+                                </table>
+                            </td>
+                            <td>Tarjeta de Crédito</td>
+                            <td>$20</td>
+                            <td>Entregado</td>
+                          </tr>
+                          <tr class="bg-warning">
+                            <td>2024-06-12</td>
+                            <td>N.A</td>
+                            <td>
+                                <table class="table table-borderless text-center m-0">
+                                    <tr><td>Tacos de birria</td><td>3</td></tr>
+                                    <tr><td>Chimichangas</td><td>1</td></tr>
+                                </table>
+                            </td>
+                            <td>Efectivo</td>
+                            <td>$30</td>
+                            <td>Entrega pendiente</td>
+                          </tr>
+                      </tbody>  
+                      </table>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <script
+        data-cfasync="false"
+        src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"
+      ></script>
+      <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.0/dist/js/bootstrap.bundle.min.js"></script>
+      <script type="text/javascript"></script>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+      <div class="container__footer">
+        <div class="box__footer">
+          <div class="logo">
+            <img src="assets/images/footer.png" alt="" />
+          </div>
+          <div class="terms">
+            <p>
+              Somos un restaurante mexicano único en Managua, Nicaragua, que
+              ofrece una experiencia gastronómica auténtica y vibrante. Calavera
+              se destaca por su ambiente acogedor y su apasionada dedicación a
+              la cocina tradicional mexicana.
+            </p>
+          </div>
+        </div>
+        <div class="box__footer">
+          <h4>Horarios</h4>
+          <p>
+            Lunes:cerrado <br /><br />Martes-Viernes<br />11:00 am a 10 pm<br /><br />Sabados-Domingos<br />10:00
+            am a 12:00 pm
+          </p>
+        </div>
+
+        <div class="box__footer">
+          <h4>Contáctanos</h4>
+          <p>
+            Teléfono convencional <br />
+            +505 <br /><br />
+            Whatsapp <br />
+            +505
+          </p>
+        </div>
+
+        <div class="box__footer">
+          <h4>Redes Sociales</h4>
+          <a
+            href="https://www.instagram.com/restaurante_calavera/"
+            target="_blank"
+            ><span class="jam jam-instagram">Instagram</span></a
+          >
+          <a
+            href="https://www.facebook.com/profile.php?id=100092392609908"
+            target="_blank"
+            ><span class="jam jam-facebook">Facebook</span></a
+          >
+          <a href="https://twitter.com/RestCalavera" target="_blank"
+            ><span class="jam jam-twitter">Twitter</span></a
+          >
+          <a href="#" target="_blank"
+            ><span class="jam jam-whatsapp">Whatsapp</span></a
+          >
+        </div>
+      </div>
+
+      <div class="box__copyright">
+        <p>Todos los derechos reservados © 2024 <b>Restaurante Calavera</b></p>
+      </div>
+    </footer>
+  </body>
+</html>
