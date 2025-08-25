@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover" />
+  <meta name="color-scheme" content="light">
+  <title>Portafolio — Ingeniero de Sistemas</title>
+
+  <!-- Tipografías -->
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800;900&family=Playfair+Display:ital,wght@0,700;1,700&display=swap"
+    rel="stylesheet">
+    <link rel="stylesheet" href="/styles/global.css">
+</head>
+
+<body oncontextmenu="return false">
+
+    <!-- NAV -->
+    <nav class="nav" role="navigation" aria-label="Principal">
+        <div class="inner wrap">
+            <a class="brand" href="#top" aria-label="Ir al inicio">Bryan <b>Jirón</b></a>
+            <button class="burger" id="btn-burger" aria-label="Abrir menú" aria-expanded="false" aria-controls="menu">
+                <span></span><span></span><span></span>
+            </button>
+            <div class="menu" id="menu">
+                <a href="#about">About</a>
+                <a href="#strengths">Strengths</a>
+                <a href="#projects">Projects</a>
+                <a href="#experience">Experience</a>
+                <a href="#contact">Contacto</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- HERO -->
+    <header id="top" class="hero">
+        <div class="wrap hero-grid">
+            <div>
+                <span class="eyebrow">UGC CREATOR / INGENIERO DE SISTEMAS</span>
+                <span class="script">Creative</span>
+                <h1 class="display">PORTFOLIO</h1>
+                <p class="muted">Construyo productos digitales con enfoque en escalabilidad, data y experiencia de
+                    usuario.
+                    Especialidad en <b>Next.js</b>, <b>Apps Script</b> e integración de dashboards.</p>
+                <div class="cta" role="group" aria-label="Acciones principales">
+                    <a class="btn btn-primary" href="#projects">Ver proyectos</a>
+                    <a class="btn btn-ghost" href="#contact">Trabajemos</a>
+                </div>
+                <div class="kpis" aria-label="Indicadores rápidos">
+                    <div class="kpi">+15 Proyectos</div>
+                    <div class="kpi">+5 Años</div>
+                    <div class="kpi">Scrum · RUP · ISO</div>
+                </div>
+            </div>
+
+            <figure class="hero-figure">
+                <!-- TODO: reemplaza imagen -->
+                <img src="/img/hero.jpg" alt="Retrato creativo" loading="eager" fetchpriority="high">
+                <div class="star" aria-hidden="true"></div>
+            </figure>
+        </div>
+    </header>
+
+    <!-- ABOUT -->
+    <section class="about" id="about" aria-labelledby="t-about">
+        <div class="wrap">
+            <h2 class="section-title" id="t-about">About me <span class="muted" style="font-weight:600">/
+                    Introduction</span>
+            </h2>
+            <div class="sep" role="presentation"></div>
+            <div class="grid">
+                <article class="card">
+                    <p class="lead">Hola, soy Bryan — Ing. de Sistemas enfocado en resolver problemas de negocio con
+                        software
+                        simple y medible. Transformo procesos manuales en flujos <b>automatizados</b> con
+                        <b>reportes</b> y
+                        <b>gráficos</b> que ayudan a decidir.
+                    </p>
+                    <ul class="list" style="margin-top:10px">
+                        <li>Portales web (Next.js/Tailwind/Bootstrap) listos para producción.</li>
+                        <li>Automatización con Google Apps Script (PDFs, dashboards, integraciones).</li>
+                        <li>Modelado de procesos (Scrum, RUP) y prácticas de seguridad (ISO 27001).</li>
+                    </ul>
+                </article>
+                <aside class="card">
+                    <strong>Stack rápido</strong>
+                    <div class="meta" style="margin-top:8px">
+                        <span class="tag">JavaScript</span><span class="tag">Next.js</span>
+                        <span class="tag">React</span><span class="tag">Node</span>
+                        <span class="tag">Apps Script</span><span class="tag">PostgreSQL</span>
+                        <span class="tag">Bootstrap</span><span class="tag">Tailwind</span>
+                    </div>
+                    <img src="/img/about-collage.jpg" alt="Collage de trabajo"
+                        style="margin-top:12px;border-radius:14px" loading="lazy">
+                </aside>
+            </div>
+        </div>
+    </section>
+
+    <!-- STRENGTHS -->
+    <section class="dark" id="strengths" aria-labelledby="t-strengths">
+        <div class="ink" aria-hidden="true"></div>
+        <div class="wrap strengths-grid">
+            <div>
+                <h2 class="section-title" id="t-strengths">Strengths</h2>
+                <p class="muted" style="color:#cdd6e3">Adaptabilidad • Storytelling técnico • Resultado medible</p>
+                <div class="sep" style="background:linear-gradient(90deg,transparent,#ffffff1f,transparent)"></div>
+                <ul class="list">
+                    <li><b>Product Thinking:</b> defino el problema con métricas y diseño roadmaps claros.</li>
+                    <li><b>Automatización:</b> convierto hojas y procesos en flujos con Apps Script/Node.</li>
+                    <li><b>Frontend con UX:</b> interfaces limpias, accesibles y rápidas.</li>
+                    <li><b>Data & Reporting:</b> dashboards y PDFs dinámicos reproducibles.</li>
+                </ul>
+            </div>
+            <div class="frame"><img src="/img/strengths.jpg" alt="Fortalezas en acción" loading="lazy"></div>
+        </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" aria-labelledby="t-projects">
+        <div class="wrap">
+            <h2 class="section-title" id="t-projects">Project 01 <span class="muted">/ GastroTech</span></h2>
+            <div class="sep"></div>
+
+            <div class="project" role="article" aria-labelledby="p1">
+                <div class="frame"><img src="/img/project1.jpg" alt="Plataforma GastroTech" loading="lazy"></div>
+                <div>
+                    <div class="meta">
+                        <span class="tag">React</span><span class="tag">Node</span><span class="tag">PostgreSQL</span>
+                        <span class="tag">Dashboards</span>
+                    </div>
+                    <h3 id="p1" style="margin:.2rem 0 6px">Plataforma omnicanal para restaurantes</h3>
+                    <p class="muted">Pedidos, caja e inventario con alertas de stock y reportes. Redujo tiempos de
+                        reposición en
+                        30% y mejoró trazabilidad.</p>
+                    <div class="cta" style="margin-top:10px">
+                        <a class="btn btn-primary" href="#" target="_blank" rel="noopener">Ver demo</a>
+                        <a class="btn btn-ghost" href="#" target="_blank" rel="noopener">Repositorio</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="sep" style="margin:40px 0"></div>
+
+            <h2 class="section-title">Project 02 <span class="muted">/ Reportes PDF</span></h2>
+            <div class="sep"></div>
+
+            <div class="project" role="article" aria-labelledby="p2">
+                <div>
+                    <div class="meta">
+                        <span class="tag">Apps Script</span><span class="tag">Google Sheets</span>
+                        <span class="tag">Charts</span><span class="tag">PDF</span>
+                    </div>
+                    <h3 id="p2" style="margin:.2rem 0 6px">Generación automática de PDFs con gráficos</h3>
+                    <p class="muted">Script que crea informes por persona con encabezados e isologos, gráficos dinámicos
+                        y
+                        exportación por lote.</p>
+                    <div class="cta" style="margin-top:10px">
+                        <a class="btn btn-primary open-pdf" href="#" data-pdf="Automatizacion.pdf">Ver ejemplo</a>
+                        <a class="btn btn-ghost" href="#" target="_blank" rel="noopener">Código</a>
+                    </div>
+                </div>
+                <div class="frame"><img src="/img/project2.jpg" alt="Automatización de PDF" loading="lazy"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- EXPERIENCE -->
+    <section id="experience" class="about" aria-labelledby="t-exp">
+        <div class="wrap">
+            <h2 class="section-title" id="t-exp">Experience <span class="muted">/ Work</span></h2>
+            <div class="sep"></div>
+            <div class="exp-grid">
+                <article class="exp" aria-labelledby="e1">
+                    <h4 id="e1">Asesoría & Construcción S.A.</h4>
+                    <small>Analista de Sistemas · 2023—Actualidad</small>
+                    <ul class="list" style="margin:.6rem 0 0">
+                        <li>Automatización de reportes y control de inventario.</li>
+                        <li>Integración de flujos con Google Workspace.</li>
+                    </ul>
+                </article>
+
+                <article class="exp" aria-labelledby="e2">
+                    <h4 id="e2">Universidad Nacional de Ingeniería</h4>
+                    <small>Proyectos académicos · 2021—2025</small>
+                    <ul class="list" style="margin:.6rem 0 0">
+                        <li>Biblioteca digital con clasificación automática.</li>
+                        <li>Modelado de procesos (Scrum, RUP) y KPIs.</li>
+                    </ul>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA FINAL -->
+    <section id="contact" class="cta-final" aria-labelledby="t-cta">
+        <div class="wrap">
+            <h2 class="big" id="t-cta">Let’s work <span style="color:var(--azul-botones)">together</span></h2>
+            <p class="muted">¿Tienes un reto técnico o de automatización? Escríbeme y lo convertimos en un proyecto real
+                con
+                entregables claros.</p>
+            <div class="cta" style="justify-content:center">
+                <!-- TODO: actualiza tus enlaces -->
+                <a class="btn btn-primary" href="mailto:correo@tudominio.com">Escríbeme</a>
+                <a class="btn btn-ghost" href="https://www.linkedin.com/" target="_blank" rel="noopener">LinkedIn</a>
+                <a class="btn btn-ghost" href="https://github.com/" target="_blank" rel="noopener">GitHub</a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="wrap" style="display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap">
+            <span>© <span id="y"></span> Bryan Jirón — Ingeniero de Sistemas</span>
+            <span class="muted">Hecho con HTML + CSS</span>
+        </div>
+    </footer>
+
+    <!-- ===== Modal PDF ===== -->
+    <div class="modal" id="pdfModal" aria-hidden="true">
+        <div class="box" role="dialog" aria-modal="true" aria-label="Visor de documento">
+            <button class="close" id="btnClose">Cerrar ✕</button>
+            <div class="pdf-toolbar">
+                <button id="prevPage">◀ Página</button>
+                <button id="nextPage">Página ▶</button>
+                <span class="spacer"></span>
+                <button id="zoomOut">−</button>
+                <span id="pageInfo">1 / 1</span>
+                <button id="zoomIn">＋</button>
+            </div>
+            <div class="pdf-wrap" id="pdfWrap">
+                <div class="loading" id="loader" aria-live="polite">Cargando documento…</div>
+                <div class="error" id="error">No se pudo cargar el PDF</div>
+                <canvas id="pdfCanvas"></canvas>
+                <div class="guard" id="guard"></div>
+            </div>
+            <div class="pdf-meta">Solo visualización — descarga y copiado deshabilitados</div>
+        </div>
+    </div>
+
+    <!-- 1) Carga PDF.js v4 (ESM) desde archivos locales .mjs -->
+    <script type="module">
+        import * as pdfjs from './scripts/pdfjs/pdf.mjs';
+        // Exponerlo como global para el resto de scripts
+        window.pdfjsLib = pdfjs;
+        // Worker ESM local
+        window.pdfjsLib.GlobalWorkerOptions.workerSrc = './scripts/pdfjs/pdf.worker.mjs';
+    </script>
+
+    <script src="/scripts/pdfView.js"></script>
+</body>
+
+</html>
