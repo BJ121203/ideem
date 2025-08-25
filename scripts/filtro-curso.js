@@ -36,17 +36,17 @@
 
   function addOrReplaceQuery(url, key, value) {
     try {
-      const u = new URL(url || "/info-curso.html", location.origin);
+      const u = new URL(url || "info-curso.html", location.origin);
       u.searchParams.set(key, value);
       return u.pathname + (u.search || "") + (u.hash || "");
     } catch {
-      const base = url || "/info-curso.html";
+      const base = url || "info-curso.html";
       const sep = base.includes("?") ? "&" : "?";
       return `${base}${sep}${encodeURIComponent(key)}=${encodeURIComponent(value)}`;
     }
   }
   function buildDetailLink(c) {
-    const base = c.link && c.link !== "#" ? c.link : "/info-curso.html";
+    const base = c.link && c.link !== "#" ? c.link : "info-curso.html";
     return addOrReplaceQuery(base, "id", c.id);
   }
 

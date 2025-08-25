@@ -1,7 +1,7 @@
 (function () {
     "use strict";
 
-    const FORM_URL = "/contactanos.html";
+    const FORM_URL = "contactanos.html";
 
     const $ = (sel, ctx = document) => ctx.querySelector(sel);
     const $$ = (sel, ctx = document) => Array.from(ctx.querySelectorAll(sel));
