@@ -4,7 +4,7 @@
    - GRID muestra el resto, también en orden descendente
 */
 
-const DATA_URL = '/scripts/noticias.json';
+const DATA_URL = 'scripts/noticias.json';
 const heroEl   = document.getElementById('hero-section');
 const gridEl   = document.getElementById('news-grid');
 const pillsEl  = document.getElementById('grid-filters');

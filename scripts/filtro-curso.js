@@ -2,7 +2,7 @@
 (function () {
   "use strict";
 
-  const DATA_URL = "/scripts/cursos.json";
+  const DATA_URL = "scripts/cursos.json";
   const ROW = document.getElementById("cursos-row");
   if (!ROW) return;
 

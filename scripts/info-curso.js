@@ -26,7 +26,7 @@
     function getCursosData() {
         if (Array.isArray(window.CURSOS)) return Promise.resolve(window.CURSOS);
         if (Array.isArray(window.cursos)) return Promise.resolve(window.cursos);
-        return fetch("/scripts/cursos.json", { cache: "no-store" })
+        return fetch("scripts/cursos.json", { cache: "no-store" })
             .then(r => r.ok ? r.json() : Promise.reject(new Error("HTTP " + r.status)))
             .catch(() => []);
     }

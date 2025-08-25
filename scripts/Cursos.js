@@ -134,7 +134,7 @@ async function init() {
 
   async function fetchCursos() {
     try {
-      const resp = await fetch('/scripts/cursos.json', { cache: 'no-store' });
+      const resp = await fetch('scripts/cursos.json', { cache: 'no-store' });
       if (!resp.ok) throw new Error('HTTP ' + resp.status);
       return await resp.json();
     } catch {

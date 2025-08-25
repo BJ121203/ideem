@@ -4,7 +4,7 @@ const contenido1 = document.getElementById('contenido1');
 const miniaturas = document.getElementById('news-grid-section');
 
 // ===== Extracción del JSON =====
-const JSON_URL = '/scripts/noticias.json';
+const JSON_URL = 'scripts/noticias.json';
 let articles = [];
 
 
