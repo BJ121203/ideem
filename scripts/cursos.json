@@ -1,7 +1,7 @@
 [
   {
     "id": 1,
-    "categoria": "Proyectos y construcción",
+    "categoria": "Proyecto y construcción",
     "img": "https://res.cloudinary.com/dwvatbtfk/image/upload/v1753976008/formulacion-y-evaluacion-de-proyectos-1024x683_pqcqxq.png",
     "titulo": "Formulación y Evaluación de proyectos",
     "modalidad": "Virtual (SINCRÓNICO)",
@@ -80,7 +80,7 @@
   },
   {
     "id": 2,
-    "categoria": "Proyectos y construcción",
+    "categoria": "Proyecto y construcción",
     "img": "https://res.cloudinary.com/dwvatbtfk/image/upload/v1753978643/ChatGPT-Image-May-29-2025-at-03_16_22-PM-1024x683_z4l11y.png",
     "titulo": "Costo y Presupuesto de Obras Civiles II",
     "modalidad": "Virtual (SINCRÓNICO)",
@@ -140,7 +140,7 @@
   },
   {
     "id": 3,
-    "categoria": "Proyectos y construcción",
+    "categoria": "Proyecto y construcción",
     "img": "https://res.cloudinary.com/dwvatbtfk/image/upload/v1753979359/mccostoypresupuesto1-1024x706_javj0o.png",
     "titulo": "Costo y Presupuesto de Obras Civiles I",
     "modalidad": "Virtual (SINCRÓNICO)",
