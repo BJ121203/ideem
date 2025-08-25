@@ -1,0 +1,332 @@
+.banner-formacion {
+    width: 100%;
+    min-height: 200px;
+    height: 25rem;
+    max-width: 100vw;
+    background-image: url('https://res.cloudinary.com/dwvatbtfk/image/upload/v1754423489/courses_gkocxa.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    text-align: center;
+}
+
+.banner-formacion h6 {
+    margin-top: 2rem;
+    font-family: 'Roboto-Bold';
+    font-size: 3rem;
+}
+
+.banner-formacion p {
+    font-family: 'Montserrat-Regular';
+    font-size: 1.2rem;
+}
+
+.contenido-formacion {
+    display: flex;
+    justify-content: center;
+}
+
+/*/ Filtro de cursos */
+
+.filtro-formacion {
+    display: flex;
+    flex-direction: column;
+    padding-top: 1rem;
+    margin-bottom: 2rem;
+}
+
+.buscador-div-menu {
+    margin: 1.8rem 0;
+    position: relative;
+}
+
+.buscador-input-menu {
+    width: 100%;
+    border-radius: 2rem;
+    border: 1px solid #000000;
+    font-size: 1.1rem;
+    color: #000000;
+    box-shadow: none;
+    outline: none;
+    transition: border-color 0.2s;
+    font-family: "Montserrat-Regular";
+    margin-bottom: 0.5rem;
+}
+
+.buscador-input-menu:focus {
+    border-color: #007bff;
+}
+
+.opcion {
+    text-decoration: none;
+    margin-right: 2rem;
+    font-family: "Montserrat-Bold";
+    color: var(--azul-bajo);
+    cursor: pointer;
+}
+
+.filtro-div {
+    margin-bottom: 1.5rem;
+    /* min-width: 22rem; <-- eliminar esta línea */
+}
+
+.filtro-div ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.filtro-div li {
+    margin-left: 0.5rem;
+    font-family: 'Montserrat-Regular';
+    font-size: 0.8rem;
+    margin-bottom: 0.8rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.filtro-div h6 {
+    font-family: 'Roboto-Bold';
+    color: var(--azul-botones);
+    font-size: 1rem;
+    margin-left: 0.3rem;
+}
+
+/* Checkbox personalizado para filtro de áreas */
+.filtro-div input[type="checkbox"] {
+    appearance: none;
+    width: 1.2rem;
+    height: 1.2rem;
+    border: 1px solid gray;
+    border-radius: 0.25rem;
+    background: #fff;
+    cursor: pointer;
+    position: relative;
+    transition: border-color 0.2s;
+    margin-right: 0.5rem;
+}
+
+.filtro-div input[type="checkbox"]:checked {
+    background-color: var(--azul-botones, #007bff);
+    border-color: var(--azul-botones, #007bff);
+}
+
+.filtro-div input[type="checkbox"]:checked::after {
+    content: '';
+    display: block;
+    position: absolute;
+    left: 0.45rem;
+    top: 0.08rem;
+    width: 0.3rem;
+    height: 0.7em;
+    border: solid #fff;
+    border-width: 0 0.18rem 0.18rem 0;
+    transform: rotate(45deg);
+}
+
+.filtro-div label {
+    cursor: pointer;
+    font-family: 'Montserrat-Regular';
+    font-size: 1rem;
+    user-select: none;
+    color: rgb(0, 0, 0);
+}
+
+.btn-ver-cursos-center {
+    font-family: 'Montserrat-Regular';
+    font-size: 1rem;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1.5rem auto 0 auto;
+    width: fit-content;
+    background-color: var(--azul-botones);
+    color: white;
+    text-decoration: none;
+    padding: 0.6rem 1.5rem;
+    width: 100%;
+    border-radius: 0.5rem;
+    margin-bottom: 2rem;
+}
+
+.btn-ver-cursos-center:hover {
+    background-color: var(--azul-botones);
+    transition: background-color 0.3s;
+}
+
+.img-formacion {
+    width: 100%;
+}
+
+/*/ Cursos */
+
+.cursos-formacion {
+    display: flex;
+    flex-direction: column;
+    padding-left: 3rem;
+    padding-top: 1rem;
+    height: 100%;
+    min-height: 150vh;
+    justify-content: flex-start;
+}
+
+.cursos-resultados {
+    margin: 1.5rem 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.cursos-resultados h6 {
+    font-family: 'Montserrat-Regular';
+    margin: 0.5rem 0;
+    font-size: 1rem;
+}
+
+.select-cursos {
+    padding: 0.5rem 2rem 0.5rem 1rem;
+    font-family: 'Montserrat-Regular';
+    border-radius: 0.4rem;
+    cursor: pointer;
+    border: 1px solid #888;
+    background-color: white;
+    transition: all 0.2s ease;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background-image: url('data:image/svg+xml;utf8,<svg fill="black" height="12" viewBox="0 0 24 24" width="12" xmlns="http://www.w3.org/2000/svg"><path d="M7 10l5 5 5-5z"/></svg>');
+    background-repeat: no-repeat;
+    background-position: right 0.5rem center;
+    background-size: 1rem;
+}
+
+.select-cursos:hover {
+    border-color: #888;
+    background-color: #f9f9f9;
+}
+
+.select-cursos:focus {
+    outline: none;
+    transition: border-color 0.2s;
+    border-color: var(--azul-botones);
+    box-shadow: 0 0 5px var(--azul-bajo);
+    background-color: #fff;
+}
+
+.curso-vista {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 24rem;
+}
+
+.cursos-categoria {
+    font-family: "Montserrat-Bold";
+    font-size: 0.8rem;
+    color: var(--azul-fuerte);
+    background: #f1f5fa;
+    padding: 0.35rem 1rem 0.35rem 1rem;
+    border-radius: 0.5rem 0.5rem 0 0;
+    margin-bottom: 0.1rem;
+    z-index: 2;
+    position: static;
+    text-align: center;
+    box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.03);
+    display: block;
+    padding: 0.8rem;
+    margin-bottom: -1rem;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.card-body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    text-align: center;
+    flex: 1 1 auto;
+    padding-bottom: 1.5rem;
+    width: 100%;
+    position: relative;
+}
+
+.curso-boton {
+  width: 100%;
+  margin-top: auto;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  border-radius: 0 0 0.5rem 0.5rem;
+  text-decoration: none;
+  font-family: "Roboto-Bold";
+  font-size: 0.9rem;
+  color: #f1f5fa;
+  background: var(--azul-fuerte);
+  padding: 0.8rem;
+}
+
+.curso-boton:hover {
+  color: var(--azul-fuerte);
+  background: #f1f5fa;
+  transition: all 0.3s ease;
+}
+
+.card-img-top {
+    width: 100%;
+    object-fit: cover;
+    min-height: 50%;
+}
+
+.card-title {
+    height: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    text-align: center;
+    font-family: "Montserrat-Bold";
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+}
+
+.card-text {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    width: 100%;
+    text-align: center;
+    font-family: "Montserrat-Bold";
+    font-size: 0.8rem;
+    color: var(--azul-fuerte);
+    margin-bottom: 3.5rem;
+}
+
+.curso-duracion {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+    font-family: "Montserrat-Regular";
+    font-size: 0.8rem;
+}
+
+/* Solo aplicar min-width en pantallas grandes */
+@media (min-width: 1200px) {
+    .filtro-div {
+        min-width: 21rem;
+    }
+    .cursos-formacion {
+        min-width: calc(3 * 18.9rem + 2 * 1rem + 2rem);
+    }
+}

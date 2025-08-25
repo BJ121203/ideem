@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Noticias | IDEEM</title>
+
+  <!-- Bootstrap + Iconos -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+
+  <!-- Estilos de esta vista -->
+  <link href="/styles/noticias-grid.css" rel="stylesheet">
+  <link href="/styles/global.css" rel="stylesheet">
+</head>
+
+<body>
+<!-- Cargar barra -->
+  <div id="navbar-container"></div>
+
+  <!-- ==== HERO (se llena desde JSON con las 5 más recientes) ==== -->
+  <section class="container my-4" id="contenido1">
+    <h2 class="text-center fuente"><span>Explora Muestra más Recientes Novedades</span></h2>
+    <div id="hero-section" class="hero-card" aria-live="polite"><!-- inyectado por JS --></div>
+  </section>
+
+  <!-- ==== MINIATURAS + FILTROS (desde JSON, ordenadas desc) ==== -->
+  <!-- Ajusta el overlay global aquí si quieres -->
+  <section id="news-grid-section" class="container mb-5"
+    style="--tile-overlay: rgba(0,42,86,.35); --tile-overlay-opacity:.35;">
+    <nav class="news-filters mb-3">
+      <div id="grid-filters" class="d-flex flex-wrap gap-2"><!-- pills por JS --></div>
+    </nav>
+
+    <div id="news-grid" class="news-grid" aria-label="Miniaturas de noticias"><!-- grid por JS --></div>
+  </section>
+
+  <!-- Contenedor para detalle de noticia -->
+  <section>
+    <div id="blog-content"></div>
+  </section>
+
+    <!-- Cargar footer -->
+  <div id="footer-container"></div>
+
+  <script src="/scripts/noticias-grid.js" defer></script>
+  <script src="/scripts/noticias.js" defer></script>
+  <script src="/scripts/global.js" defer></script>
+</body>
+
+</html>

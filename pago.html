@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Métodos de pago – IDEEM</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="/styles/global.css" />
+    <link rel="stylesheet" href="./styles/pago.css" />
+</head>
+
+<body>
+
+    <!-- Cargar barra -->
+    <div id="navbar-container"></div>
+
+    <!-- Banner Hero Bootstrap -->
+    <div class="banner-hero d-flex align-items-center justify-content-center"
+        style="height:70vh; background: #0b3b64; position:relative; overflow:hidden;">
+        <div class="w-100 h-100 position-absolute top-0 start-0" style="z-index:0;">
+            <img src="https://res.cloudinary.com/dwvatbtfk/image/upload/v1755727708/pago-en-linea-de-entrega-de-comercio-electronico-acceso-al-concepto-de-pago-de-pago-en-linea-las-mujeres-usan-banca-portatil-y-compras-en-linea-traves-de-aplicaciones-moviles-bancarias-transacciones-e_cw0uhj.jpg"
+                alt="Pago en línea" class="w-100 h-100 object-fit-cover" style="opacity:0.7; object-position: center;">
+            <div class="overlay-banner"></div>
+        </div>
+    </div>
+
+    <main class="contenedor-principal container">
+        <div class="row g-4">
+            <div class="col-12">
+                <!-- Transferencia bancaria -->
+                <section class="seccion-pago mb-2">
+                    <h2 class="titulo-seccion mb-4 text-center">Transferencia bancaria</h2>
+                    <div class="tabla-banco card shadow-sm">
+                        <div class="fila-banco fila-banco--encabezado card-header">
+                            <span class="etiqueta-banco">Cuenta:</span>
+                            <span class="valor-banco">
+                                Instituto de Emprendimiento e Innovación para el Desarrollo Empresarial S.A
+                            </span>
+                        </div>
+                        <div class="fila-banco fila-banco--alterno card-body">
+                            <span class="etiqueta-banco">No. Cuenta córdobas:</span>
+                            <span class="valor-banco"><strong>NIO: 3675 49474</strong></span>
+                        </div>
+                        <div class="fila-banco card-body">
+                            <span class="etiqueta-banco">No. Cuenta dólares:</span>
+                            <span class="valor-banco"><strong>USD: 3675 49540</strong></span>
+                        </div>
+                        <div class="fila-banco fila-banco--alterno fila-banco--pie card-footer">
+                            <span class="etiqueta-banco">Nombre del Banco:</span>
+                            <span class="valor-banco"><strong>Banco de América Central, BAC</strong></span>
+                        </div>
+                    </div>
+                </section>
+            </div>
+            <div class="col-12">
+                <!-- Métodos de pago -->
+                <section class="seccion-pago">
+                    <h2 class="titulo-seccion mb-4 text-center">Métodos de pago</h2>
+                    <div class="row g-3 tarjetas-pago justify-content-center">
+                        <!-- Card Córdoba -->
+                        <div class="col-12 col-md">
+                            <article class="tarjeta-pago h-100">
+                                <div class="fondo-tarjeta fondo-tarjeta--nio" aria-hidden="true"></div>
+                                <div class="contenido-tarjeta">
+                                    <h3 class="moneda-tarjeta">Córdoba</h3>
+                                    <p class="texto-tarjeta">Pago de<br>Curso Especializado</p>
+                                    <p class="monto-tarjeta">NIO 2,562</p>
+                                    <div class="d-flex justify-content-center w-100">
+                                        <a class="btn btn-pago" href="#pago-nio">Pago en línea</a>
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
+                        <!-- Card Dólares -->
+                        <div class="col-12 col-md">
+                            <article class="tarjeta-pago h-100">
+                                <div class="fondo-tarjeta fondo-tarjeta--usd" aria-hidden="true"></div>
+                                <div class="contenido-tarjeta">
+                                    <h3 class="moneda-tarjeta">Dólares</h3>
+                                    <p class="texto-tarjeta">Pago de<br>Curso Especializado</p>
+                                    <p class="monto-tarjeta">USD 70</p>
+                                    <div class="d-flex justify-content-center w-100">
+                                        <a class="btn btn-pago" href="#pago-usd">Pago en línea</a>
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </main>
+    <!-- Cargar footer -->
+    <div id="footer-container"></div>
+    <script src="/scripts/global.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

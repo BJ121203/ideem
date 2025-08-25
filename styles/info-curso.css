@@ -1,0 +1,199 @@
+.banner-curso {
+    width: 100%;
+    min-height: 200px;
+    height: 28rem;
+    max-width: 100vw;
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+
+.datos-curso ol {
+    list-style-type: none;
+    padding-left: 0;
+    display: flex;
+}
+
+.precio-header {
+    overflow: hidden;
+    text-align: center;
+    font-size: 1rem;
+    font-family: 'Montserrat-Bold';
+    color: var(--azul-fuerte);
+}
+
+.precio-header::before,
+.precio-header::after {
+    background-color: #000;
+    content: "";
+    display: inline-block;
+    height: 1px;
+    position: relative;
+    vertical-align: middle;
+    width: 50%;
+}
+
+.precio-header::before {
+    right: 0.5em;
+    margin-left: -50%;
+}
+
+.precio-header::after {
+    left: 0.5em;
+    margin-right: -50%;
+}
+
+/* Esto es temporal antes de la responsividad */
+.informacion-curso {
+    display: flex;
+    justify-content: space-between;
+    gap: 3rem;
+    align-items: center;
+    justify-content: center;
+    margin-top: 3rem;
+    margin-bottom: 5rem;
+}
+
+.precio-curso {
+    padding: 2rem 2rem;
+    border-radius: 0.5rem;
+    border: 1px solid var(--azul-fuerte);
+}
+
+.precio-curso dt {
+    font-family: 'Montserrat-Bold';
+    color: var(--azul-fuerte);
+    font-size: 0.9rem;
+}
+
+.precio-curso dd {
+    font-family: 'Montserrat-Regular';
+    font-size: 0.9rem;
+}
+
+.precio-anterior {
+    text-decoration: line-through;
+    font-family: 'Montserrat-Regular';
+}
+
+.precio-nuevo {
+    font-family: 'Montserrat-Bold';
+    font-size: 1.5rem;
+    color: var(--azul-botones);
+}
+
+.curso-botones {
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.curso-botones a {
+    cursor: pointer;
+    border-radius: 0.2rem;
+    min-width: 100%;
+    margin-top: 0.5rem;
+    color: white;
+    padding: 0.5rem 0rem;
+    text-decoration: none;
+    font-size: 0.9rem;
+    font-family: 'Montserrat-Regular';
+    text-align: center;
+}
+
+.btn-mas-info {
+    background-color: var(--azul-fuerte);
+}
+
+.btn-mas-info:hover,
+.btn-comprar:hover {
+    background-color: #f1f5fa;
+    color: var(--azul-fuerte);
+    transition: background-color 0.3s;
+}
+
+.btn-comprar {
+    background-color: var(--azul-botones);
+}
+
+.img-hover-container {
+    position: relative;
+    display: inline-block;
+}
+
+.img-hover-icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #000000;
+    border-radius: 50%;
+    padding: 0.5em 0.6em;
+    font-size: 2rem;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.2s;
+}
+
+.img-hover-container:hover .img-hover-icon {
+    opacity: 1;
+}
+
+/* Segundo div */
+
+.separador-curso li {
+    font-family: 'Montserrat-Regular';
+}
+
+.separador-curso a {
+    text-decoration: none;
+    color: var(--azul-botones);
+}
+
+.datos-curso {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.datos-curso h5 {
+    font-family: 'Montserrat-Bold';
+    color: var(--azul-fuerte);
+    font-size: 1.5rem;
+    margin-bottom: 0.8rem;
+}
+
+.datos-curso p {
+    display: flex;
+    align-items: flex-start;
+    font-family: 'Montserrat-Regular';
+    font-size: 1.01rem;
+    margin-bottom: 2rem;
+    gap: 0.5rem;
+}
+
+.datos-curso p i {
+    margin-top: 0.5rem;
+    flex-shrink: 0;
+}
+
+/* Acordeón */
+
+.accordion-body {
+    font-family: 'Montserrat-Regular';
+}
+
+.accordion-button {
+    background-color: rgb(235, 241, 254) !important;
+    font-family: 'Montserrat-Bold';
+    color: var(--azul-fuerte) !important;;
+}
+
+

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="styles/Pruebas.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+</head>
+<body>
+    
+<!-- HERO / BANNER de la noticia -->
+<section class="post-hero" aria-label="Banner de la noticia">
+  <div class="post-hero-bg" style="background-image:url('${post.image}')"></div>
+  <div class="post-hero-overlay"></div>
+
+  <div class="container post-hero-inner">
+    <span class="post-hero-cat">${post.category || 'General'}</span>
+    <h1 class="post-hero-title">${post.title}</h1>
+    <div class="post-hero-meta">${post.date || ''} · ${post.readTime || ''}</div>
+  </div>
+</section>
+
+<!-- Contenido del artículo -->
+<div class="container my-4">
+  <div class="row">
+    <div class="col-md-12">
+      <div class="blog-container">
+        <a href="noticias.html" class="dropdown-item px-0">Noticias</a>
+        <p class="d-inline"> / ${post.slug}</p>
+
+        <p class="text-muted mt-2">Categoría: ${post.category} · Lectura: ${post.readTime} · ${post.date}</p>
+        <h2 class="mb-3">${post.title}</h2>
+
+        <!-- Nota: ya NO incluimos <img> aquí -->
+        <p class="text-justify">${post.content}</p>
+
+        <!-- Botones para compartir -->
+        <div class="share-buttons" id="share-buttons-container">
+          <span>COMPARTIR NOTICIA</span>
+          <a href="#" id="share-facebook"  target="_blank" title="Compartir en Facebook"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" id="share-x"        target="_blank" title="Compartir en X (Twitter)"><i class="fab fa-x-twitter"></i></a>
+          <a href="#" id="share-linkedin" target="_blank" title="Compartir en LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+          <a href="#" id="share-email"    target="_blank" title="Compartir por Email"><i class="fas fa-envelope"></i></a>
+          <a href="#" id="share-whatsapp" target="_blank" title="Compartir por WhatsApp"><i class="fab fa-whatsapp"></i></a>
+        </div>
+
+        <!-- Aquí puedes mantener tu bloque de “Noticias relacionadas” -->
+        <!-- ... -->
+      </div>
+    </div>
+  </div>
+</div>
+
+    <script src="/scripts/Pruebas.js"></script>
+</body>
+</html>

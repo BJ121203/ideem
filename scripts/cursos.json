@@ -1,0 +1,500 @@
+[
+  {
+    "id": 1,
+    "categoria": "Proyectos y construcción",
+    "img": "https://res.cloudinary.com/dwvatbtfk/image/upload/v1753976008/formulacion-y-evaluacion-de-proyectos-1024x683_pqcqxq.png",
+    "titulo": "Formulación y Evaluación de proyectos",
+    "modalidad": "Virtual (SINCRÓNICO)",
+    "duracion": "32 horas",
+    "fecha": "27 Septiembre 2025",
+    "precioAnterior": 80,
+    "precioActual": 70,
+    "tipo": "CURSO",
+    "descripcion": "El curso de formulación y evaluación de proyectos consiste en identificar, cuantificar y valorar costos y beneficios para todo horizonte de vida de un proyecto; inicia con la aplicación de indicadores de evaluación financiera o económica y finaliza con una conclusión. Este curso permitirá que los profesionales se desarrollen de una manera más completa en el ámbito de proyectos porque contarán con herramientas que mejorarán sus conocimientos y potencializarán sus carreras.",
+    "dirigidoA": "El curso está dirigido a funcionarios públicos y profesionales que se desempeñen en áreas de la planificación y especialmente responsables de la inversión en proyectos ya sea formuladores, analistas o encargados de unidades de inversión, tanto a nivel nacional, como sectorial o territorial. También a aquellos que deseen tener amplio conocimiento en el desarrollo de proyectos tanto en la planeación y ejecución del mismo.",
+    "requisitos": "Los participantes deben poseer conocimientos básicos de administración, finanzas o profesiones a fines, así mismo uso básico de la computadora y programas como Word, Excel, Power Point y e-mail.",
+    "contenido": [
+      {
+        "n": 1,
+        "tema": "Aspectos generales para proyectos de inversión.",
+        "descripcion": "Introduce los conceptos fundamentales y la importancia económica y social de la <strong>formulación y evaluación de proyectos de inversión.</strong>"
+      },
+      {
+        "n": 2,
+        "tema": "Ciclo, importancia y elementos de los proyectos.",
+        "descripcion": "Explora las <strong>fases del ciclo de vida de un proyecto,</strong> resaltando la relevancia de cada etapa y los elementos clave que determinan su éxito."
+      },
+      {
+        "n": 3,
+        "tema": "Identificación del Proyecto.",
+        "descripcion": "Proporciona métodos para <strong>detectar oportunidades, definir el alcance y justificar la creación de un proyecto</strong> a partir de necesidades identificadas."
+      },
+      {
+        "n": 4,
+        "tema": "Análisis de mercado y sustentabilidad.",
+        "descripcion": "Enseña herramientas para <strong>evaluar la demanda, competencia y condiciones del mercado,</strong> integrando criterios de sostenibilidad y viabilidad a largo plazo."
+      },
+      {
+        "n": 5,
+        "tema": "Análisis y estudio de viabilidad técnica en los proyectos.",
+        "descripcion": "Aborda las metodologías para <strong>evaluar la factibilidad técnica de un proyecto,</strong> considerando recursos, tecnología y posibles riesgos operativos."
+      },
+      {
+        "n": 6,
+        "tema": "Finanzas para proyectos de inversión.",
+        "descripcion": "Presenta técnicas de análisis financiero, métodos de valoración y estrategias de financiamiento para determinar la <strong>rentabilidad y viabilidad económica del proyecto.</strong>"
+      },
+      {
+        "n": 7,
+        "tema": "Control y seguimiento de un proyecto de inversión.",
+        "descripcion": "Discute los mecanismos y herramientas para monitorear la ejecución del proyecto, asegurando el <strong>cumplimiento de objetivos, plazos y presupuestos establecidos.</strong>"
+      },
+      {
+        "n": 8,
+        "tema": "Lineamientos para la presentación de proyectos de carácter social.",
+        "descripcion": "Ofrece <strong>directrices para elaborar y comunicar proyectos sociales,</strong> enfatizando la evaluación de impacto, participación de stakeholders y claridad en la exposición de resultados."
+      }
+    ],
+    "aprenderas": [
+      "Conocer el ciclo de vida de un proyecto: tipos de evaluación, diagnostico, oferta-demanda.",
+      "Conocer el comportamiento del consumidor y la teoría de la demanda.",
+      "Estimar los elementos de microeconomía para la evaluación social del proyecto.",
+      "Realizar estudio técnico de un proyecto y flujo de caja.",
+      "Determinar costos y beneficios privados de un proyecto."
+    ],
+    "camposAplicacion": [
+      "Sector Público y Gobierno",
+      "Organizaciones No Gubernamentales y Sociales",
+      "Consultoría y Asesoría en Proyectos",
+      "Empresas Privadas y Corporaciones",
+      "Emprendimiento y Pymes",
+      "Inversiones en Infraestructura y Desarrollo"
+    ],
+    "diasSemana": [
+      "Sábado"
+    ],
+    "horaInicio": "1:00 pm",
+    "horaFin": "5:00 pm",
+    "recursosIncluye": "Inscripción, Recursos digitales, Certificado americano, Recursos descargables",
+    "link": "/info-curso.html"
+  },
+  {
+    "id": 2,
+    "categoria": "Proyectos y construcción",
+    "img": "https://res.cloudinary.com/dwvatbtfk/image/upload/v1753978643/ChatGPT-Image-May-29-2025-at-03_16_22-PM-1024x683_z4l11y.png",
+    "titulo": "Costo y Presupuesto de Obras Civiles II",
+    "modalidad": "Virtual (SINCRÓNICO)",
+    "duracion": "32 horas",
+    "fecha": "27 Septiembre 2025",
+    "precioAnterior": 160,
+    "precioActual": 140,
+    "tipo": "CURSO",
+    "descripcion": "Profundiza en el análisis de costos y presupuestos para obras civiles, abordando casos avanzados y herramientas modernas de control financiero.",
+    "dirigidoA": "Ingenieros civiles, arquitectos y profesionales de la construcción que buscan optimizar presupuestos y controlar costos.",
+    "requisitos": "Conocimientos básicos de obras civiles y manejo de Excel.",
+    "contenido": [
+      {
+        "n": 1,
+        "tema": "Presupuestos avanzados",
+        "descripcion": "Métodos y herramientas para presupuestar obras complejas."
+      },
+      {
+        "n": 2,
+        "tema": "Control de costos",
+        "descripcion": "Seguimiento, control y ajustes en tiempo real."
+      },
+      {
+        "n": 3,
+        "tema": "Análisis de desviaciones",
+        "descripcion": "Identificación y gestión de sobrecostos."
+      },
+      {
+        "n": 4,
+        "tema": "Presentación de informes",
+        "descripcion": "Elaboración de reportes para clientes y supervisores."
+      }
+    ],
+    "aprenderas": [
+      "Presupuestar obras civiles con precisión.",
+      "Controlar y ajustar costos en proyectos.",
+      "Analizar desviaciones y proponer soluciones.",
+      "Presentar informes claros y efectivos."
+    ],
+    "camposAplicacion": [
+      "Construcción civil",
+      "Supervisión de obras",
+      "Consultoría",
+      "Empresas constructoras"
+    ],
+    "diasSemana": [
+      "Sábado"
+    ],
+    "horaInicio": "08:00",
+    "horaFin": "12:00",
+    "recursosIncluye": [
+      "Plantillas de presupuesto en Excel",
+      "Guías PDF",
+      "Sesiones grabadas por 30 días"
+    ],
+    "link": "#"
+  },
+  {
+    "id": 3,
+    "categoria": "Proyectos y construcción",
+    "img": "https://res.cloudinary.com/dwvatbtfk/image/upload/v1753979359/mccostoypresupuesto1-1024x706_javj0o.png",
+    "titulo": "Costo y Presupuesto de Obras Civiles I",
+    "modalidad": "Virtual (SINCRÓNICO)",
+    "duracion": "32 horas",
+    "fecha": "27 Septiembre 2025",
+    "precioAnterior": 150,
+    "precioActual": 130,
+    "tipo": "CURSO",
+    "descripcion": "Introducción al proceso de costeo y presupuestación de obras civiles, desde el análisis de precios unitarios hasta la elaboración de presupuestos básicos.",
+    "dirigidoA": "Estudiantes y profesionales que inician en el área de presupuestos de obras civiles.",
+    "requisitos": "Conocimientos básicos de construcción y manejo de Excel.",
+    "contenido": [
+      {
+        "n": 1,
+        "tema": "Precios unitarios",
+        "descripcion": "Cálculo y análisis de precios unitarios."
+      },
+      {
+        "n": 2,
+        "tema": "Presupuestos básicos",
+        "descripcion": "Elaboración de presupuestos para obras pequeñas."
+      },
+      {
+        "n": 3,
+        "tema": "Control inicial de costos",
+        "descripcion": "Herramientas para el seguimiento básico de costos."
+      },
+      {
+        "n": 4,
+        "tema": "Presentación de presupuestos",
+        "descripcion": "Formato y entrega de presupuestos."
+      }
+    ],
+    "aprenderas": [
+      "Calcular precios unitarios.",
+      "Elaborar presupuestos básicos.",
+      "Controlar costos iniciales.",
+      "Presentar presupuestos correctamente."
+    ],
+    "camposAplicacion": [
+      "Obras civiles",
+      "Empresas constructoras",
+      "Consultoría básica"
+    ],
+    "diasSemana": [
+      "Sábado"
+    ],
+    "horaInicio": "08:00",
+    "horaFin": "12:00",
+    "recursosIncluye": [
+      "Plantillas de precios unitarios",
+      "Guías PDF",
+      "Sesiones grabadas por 30 días"
+    ],
+    "link": "#"
+  },
+  {
+    "id": 4,
+    "categoria": "Ofimática",
+    "img": "https://res.cloudinary.com/dwvatbtfk/image/upload/v1753979557/power-bi-master-dax-avanzado-1024x683_aub2oi.png",
+    "titulo": "Power BI Master Dax - Avanzado",
+    "modalidad": "Virtual (SINCRÓNICO)",
+    "duracion": "32 horas",
+    "fecha": "27 Septiembre 2025",
+    "precioAnterior": 180,
+    "precioActual": 150,
+    "tipo": "CURSO",
+    "descripcion": "Domina el lenguaje DAX y las funciones avanzadas de Power BI para crear dashboards interactivos y análisis de datos complejos.",
+    "dirigidoA": "Analistas de datos, profesionales de BI y usuarios avanzados de Excel.",
+    "requisitos": "Conocimientos básicos de Power BI y DAX.",
+    "contenido": [
+      {
+        "n": 1,
+        "tema": "DAX avanzado",
+        "descripcion": "Funciones complejas y optimización de cálculos."
+      },
+      {
+        "n": 2,
+        "tema": "Modelado de datos",
+        "descripcion": "Relaciones, jerarquías y optimización."
+      },
+      {
+        "n": 3,
+        "tema": "Visualizaciones avanzadas",
+        "descripcion": "Dashboards interactivos y personalizados."
+      },
+      {
+        "n": 4,
+        "tema": "Automatización y reportes",
+        "descripcion": "Automatización de procesos y generación de informes."
+      }
+    ],
+    "aprenderas": [
+      "Crear dashboards avanzados.",
+      "Optimizar modelos de datos.",
+      "Automatizar reportes en Power BI.",
+      "Aplicar funciones DAX complejas."
+    ],
+    "camposAplicacion": [
+      "Business Intelligence",
+      "Análisis de datos",
+      "Consultoría",
+      "Empresas de tecnología"
+    ],
+    "diasSemana": [
+      "Sábado"
+    ],
+    "horaInicio": "08:00",
+    "horaFin": "12:00",
+    "recursosIncluye": [
+      "Archivos Power BI",
+      "Guías PDF",
+      "Sesiones grabadas por 30 días"
+    ],
+    "link": "#"
+  },
+  {
+    "id": 5,
+    "categoria": "Ofimática",
+    "img": "https://res.cloudinary.com/dwvatbtfk/image/upload/v1753979671/power-bi-basico-1024x683_qjmmzo.png",
+    "titulo": "Power BI Básico",
+    "modalidad": "Virtual (SINCRÓNICO)",
+    "duracion": "32 horas",
+    "fecha": "27 Septiembre 2025",
+    "precioAnterior": 130,
+    "precioActual": 110,
+    "tipo": "CURSO",
+    "descripcion": "Aprende desde cero a crear reportes y dashboards en Power BI, conectando datos y generando visualizaciones efectivas.",
+    "dirigidoA": "Usuarios de Excel, estudiantes y profesionales que desean iniciarse en Power BI.",
+    "requisitos": "Manejo básico de Excel.",
+    "contenido": [
+      {
+        "n": 1,
+        "tema": "Introducción a Power BI",
+        "descripcion": "Conceptos básicos y entorno de trabajo."
+      },
+      {
+        "n": 2,
+        "tema": "Conexión de datos",
+        "descripcion": "Importación y transformación de datos."
+      },
+      {
+        "n": 3,
+        "tema": "Visualizaciones básicas",
+        "descripcion": "Creación de gráficos y tablas."
+      },
+      {
+        "n": 4,
+        "tema": "Publicación de reportes",
+        "descripcion": "Compartir dashboards en la nube."
+      }
+    ],
+    "aprenderas": [
+      "Crear reportes básicos en Power BI.",
+      "Conectar y transformar datos.",
+      "Visualizar información de manera efectiva.",
+      "Publicar dashboards en la nube."
+    ],
+    "camposAplicacion": [
+      "Empresas",
+      "Educación",
+      "Consultoría",
+      "Análisis de datos"
+    ],
+    "diasSemana": [
+      "Sábado"
+    ],
+    "horaInicio": "08:00",
+    "horaFin": "12:00",
+    "recursosIncluye": [
+      "Archivos Power BI",
+      "Guías PDF",
+      "Sesiones grabadas por 30 días"
+    ],
+    "link": "#"
+  },
+  {
+    "id": 6,
+    "categoria": "Ofimática",
+    "img": "https://res.cloudinary.com/dwvatbtfk/image/upload/v1753981356/power-bi-a-fondo-1024x683_s1eqvj.png",
+    "titulo": "Power BI a Fondo",
+    "modalidad": "Virtual (SINCRÓNICO)",
+    "duracion": "32 horas",
+    "fecha": "27 Septiembre 2025",
+    "precioAnterior": 170,
+    "precioActual": 145,
+    "tipo": "CURSO",
+    "descripcion": "Explora todas las funcionalidades de Power BI, desde la conexión de datos hasta la creación de dashboards avanzados.",
+    "dirigidoA": "Profesionales que buscan dominar Power BI en profundidad.",
+    "requisitos": "Conocimientos básicos de Excel y Power BI.",
+    "contenido": [
+      {
+        "n": 1,
+        "tema": "Conexión avanzada de datos",
+        "descripcion": "Integración de múltiples fuentes."
+      },
+      {
+        "n": 2,
+        "tema": "Modelado y transformación",
+        "descripcion": "Optimización de modelos de datos."
+      },
+      {
+        "n": 3,
+        "tema": "Visualizaciones avanzadas",
+        "descripcion": "Dashboards interactivos y personalizados."
+      },
+      {
+        "n": 4,
+        "tema": "Publicación y colaboración",
+        "descripcion": "Compartir y colaborar en la nube."
+      }
+    ],
+    "aprenderas": [
+      "Integrar fuentes de datos.",
+      "Modelar y transformar información.",
+      "Crear dashboards avanzados.",
+      "Colaborar en proyectos Power BI."
+    ],
+    "camposAplicacion": [
+      "Empresas",
+      "Consultoría",
+      "Educación",
+      "Análisis de datos"
+    ],
+    "diasSemana": [
+      "Sábado"
+    ],
+    "horaInicio": "08:00",
+    "horaFin": "12:00",
+    "recursosIncluye": [
+      "Archivos Power BI",
+      "Guías PDF",
+      "Sesiones grabadas por 30 días"
+    ],
+    "link": "#"
+  },
+  {
+    "id": 7,
+    "categoria": "Ofimática",
+    "img": "https://res.cloudinary.com/dwvatbtfk/image/upload/v1753981531/operador-1024x683_arj708.png",
+    "titulo": "Operador de Computadoras: Word, Excel y PowerPoint - Office 2025",
+    "modalidad": "Virtual (SINCRÓNICO)",
+    "duracion": "32 horas",
+    "fecha": "27 Septiembre 2025",
+    "precioAnterior": 120,
+    "precioActual": 100,
+    "tipo": "CURSO",
+    "descripcion": "Domina las herramientas básicas de Office 2025: Word, Excel y PowerPoint, para mejorar tu productividad y desempeño profesional.",
+    "dirigidoA": "Estudiantes, profesionales y público en general que deseen mejorar sus habilidades ofimáticas.",
+    "requisitos": "Ninguno.",
+    "contenido": [
+      {
+        "n": 1,
+        "tema": "Word básico",
+        "descripcion": "Creación y edición de documentos."
+      },
+      {
+        "n": 2,
+        "tema": "Excel básico",
+        "descripcion": "Manejo de hojas de cálculo y fórmulas simples."
+      },
+      {
+        "n": 3,
+        "tema": "PowerPoint básico",
+        "descripcion": "Creación de presentaciones efectivas."
+      },
+      {
+        "n": 4,
+        "tema": "Integración Office",
+        "descripcion": "Uso conjunto de las herramientas."
+      }
+    ],
+    "aprenderas": [
+      "Crear documentos en Word.",
+      "Manejar hojas de cálculo en Excel.",
+      "Diseñar presentaciones en PowerPoint.",
+      "Integrar herramientas de Office."
+    ],
+    "camposAplicacion": [
+      "Empresas",
+      "Educación",
+      "Administración",
+      "Consultoría"
+    ],
+    "diasSemana": [
+      "Sábado"
+    ],
+    "horaInicio": "08:00",
+    "horaFin": "12:00",
+    "recursosIncluye": [
+      "Archivos de práctica",
+      "Guías PDF",
+      "Sesiones grabadas por 30 días"
+    ],
+    "link": "#"
+  },
+  {
+    "id": 8,
+    "categoria": "Sin info",
+    "img": "https://res.cloudinary.com/dwvatbtfk/image/upload/v1753982030/excel-avanzado-1024x683_xjvdm9.png",
+    "titulo": "Excel Avanzado (Office 2025)",
+    "modalidad": "Virtual (SINCRÓNICO)",
+    "duracion": "32 horas",
+    "fecha": "27 Septiembre 2025",
+    "precioAnterior": 135,
+    "precioActual": 115,
+    "tipo": "CURSO",
+    "descripcion": "Aprende funciones avanzadas de Excel, tablas dinámicas, macros y automatización para potenciar tu análisis de datos.",
+    "dirigidoA": "Usuarios de Excel que desean llevar sus habilidades al siguiente nivel.",
+    "requisitos": "Manejo básico de Excel.",
+    "contenido": [
+      {
+        "n": 1,
+        "tema": "Funciones avanzadas",
+        "descripcion": "Uso de fórmulas y funciones complejas."
+      },
+      {
+        "n": 2,
+        "tema": "Tablas dinámicas",
+        "descripcion": "Creación y análisis de tablas dinámicas."
+      },
+      {
+        "n": 3,
+        "tema": "Macros y automatización",
+        "descripcion": "Automatización de tareas repetitivas."
+      },
+      {
+        "n": 4,
+        "tema": "Visualización de datos",
+        "descripcion": "Gráficos y dashboards en Excel."
+      }
+    ],
+    "aprenderas": [
+      "Utilizar funciones avanzadas.",
+      "Crear y analizar tablas dinámicas.",
+      "Automatizar tareas con macros.",
+      "Visualizar datos de manera efectiva."
+    ],
+    "camposAplicacion": [
+      "Empresas",
+      "Consultoría",
+      "Educación",
+      "Análisis de datos"
+    ],
+    "diasSemana": [
+      "Sábado"
+    ],
+    "horaInicio": "08:00",
+    "horaFin": "12:00",
+    "recursosIncluye": [
+      "Archivos de Excel",
+      "Guías PDF",
+      "Sesiones grabadas por 30 días"
+    ],
+    "link": "#"
+  }
+]

@@ -1,0 +1,203 @@
+@keyframes aparecer {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.overlay-banner {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 70vh;
+    background: rgba(0, 51, 153, 0.35);
+    z-index: 1;
+    pointer-events: none;
+}
+
+.contenedor-principal {
+    width: min(1100px, 92%);
+    margin: 28px auto;
+}
+
+.seccion-pago {
+    margin: 28px 0;
+}
+
+.titulo-seccion {
+    font-family: 'Roboto-Bold';
+    color: var(--azul-fuerte);
+}
+
+/* Caja de transferencia (estilo tabla) */
+.tabla-banco {
+    background: #fff;
+    border-radius: var(--radius);
+    overflow: hidden;
+    border: 1px solid #e9eef6;
+    font-family: 'Roboto-Bold';
+    font-size: 1.2rem;
+}
+
+.tabla-banco .fila-banco:nth-child(1) {
+    background: #fff;
+    color: var(--azul-fuerte);
+
+}
+
+.tabla-banco .fila-banco:nth-child(2) {
+    background: rgba(0, 146, 205, 0.12); 
+    color: var(--azul-fuerte);
+
+}
+
+.tabla-banco .fila-banco:nth-child(3) {
+    background: #fff;
+    color: var(--azul-fuerte);
+
+}
+
+.tabla-banco .fila-banco:nth-child(4) {
+    background: rgba(0, 146, 205, 0.12); 
+    color: var(--azul-fuerte);
+
+}
+
+.fila-banco {
+    display: grid;
+    grid-template-columns: 220px 1fr;
+    gap: 18px;
+    padding: 16px 22px;
+    align-items: center;
+    border-top: 1px solid var(--line);
+}
+
+.fila-banco:first-child {
+    border-top: none;
+}
+
+.fila-banco--encabezado {
+    background: #e9f2fb;
+    color: var(--azul-fuerte);
+    border-top: none;
+}
+
+.fila-banco--alterno {
+    background: #f6fbff;
+}
+
+.fila-banco--pie:last-child {
+    border-bottom-left-radius: var(--radius);
+    border-bottom-right-radius: var(--radius);
+}
+
+.etiqueta-banco {
+    opacity: .9;
+    font-family: 'Roboto-Regular', sans-serif;
+}
+
+.valor-banco {
+    line-height: 1.45;
+    font-family: 'Roboto-Bold', sans-serif;
+}
+
+
+.tarjetas-pago {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(260px, 1fr));
+    gap: 22px;
+}
+
+.tarjeta-pago {
+    position: relative;
+    min-height: 430px;
+    border-radius: 18px;
+    overflow: hidden;
+    box-shadow: var(--shadow);
+    isolation: isolate;
+    background: var(--azul-fuerte);
+}
+
+.fondo-tarjeta {
+    position: absolute;
+    inset: 0;
+    z-index: 0;
+    background-size: cover;
+    background-position: center;
+    filter: contrast(1.05);
+}
+
+.fondo-tarjeta--nio {
+    background-image:
+        linear-gradient(180deg, rgba(0, 51, 153, 0.5), rgba(0, 51, 153, 0.8)),
+        url("https://res.cloudinary.com/dwvatbtfk/image/upload/v1755730527/primer-plano-del-papel-moneda_zc3o8m.jpg");
+}
+
+.fondo-tarjeta--usd {
+    background-image:
+        linear-gradient(180deg, rgba(0, 51, 153, 0.5), rgba(0, 51, 153, 0.8)),
+        url("https://res.cloudinary.com/dwvatbtfk/image/upload/v1755730072/shutterstock_1359032693_nj1rb4.jpg");
+}
+
+.contenido-tarjeta {
+    position: relative;
+    z-index: 1;
+    color: #fff;
+    height: 100%;
+    padding: 28px 26px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    text-shadow: 0 2px 12px rgba(0, 0, 0, .2);
+}
+
+.moneda-tarjeta {
+    letter-spacing: .5px;
+    opacity: .95;
+    font-size: clamp(18px, 2vw, 2rem);
+    margin: 0 0 18px 0;
+    font-family: 'Roboto-Bold';
+}
+
+.texto-tarjeta {
+    margin: 0 0 18px 0;
+    font-family: 'Roboto-Bold';
+
+    font-size: clamp(20px, 2.4vw, 2rem);
+    line-height: 1.1;
+}
+
+.monto-tarjeta {
+    font-size: clamp(28px, 4.2vw, 42px);
+    font-family: 'Roboto-Bold';
+    margin: 8px 0 22px 0;
+}
+
+.btn {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 700;
+    padding: 12px 18px;
+    border-radius: 10px;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, .18);
+    transition: transform .15s ease, box-shadow .15s ease, background .15s ease;
+    margin-top: auto;
+}
+
+.btn:hover {
+    box-shadow: 0 10px 24px rgba(0, 0, 0, .22);
+    background-color: var(--azul-fuerte) !important;
+}
+
+.btn-pago {
+    background-color: var(--azul-botones) !important;
+    font-family: 'Roboto-Bold', sans-serif !important;
+    color: white !important;
+    padding: 0.8rem 0.8rem !important;
+    font-size: 1.2rem !important;
+    width: auto !important;
+}
+

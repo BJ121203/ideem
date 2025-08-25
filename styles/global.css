@@ -1,0 +1,314 @@
+@font-face {
+    font-family: 'Roboto-Regular';
+    src: url(fonts/Roboto-Regular.ttf);
+}
+@font-face {
+    font-family: 'Roboto-Bold';
+    src: url(fonts/Roboto-Bold.ttf);
+}
+@font-face {
+    font-family: 'Montserrat-Regular';
+    src: url(fonts/Roboto-Regular.ttf);
+}
+@font-face {
+    font-family: 'Montserrat-Bold';
+    src: url(fonts/Roboto-Bold.ttf);
+}
+@font-face {
+    font-family: 'Roboto-Black';
+    src: url(fonts/Roboto-Black.ttf);
+}
+
+:root {
+    --azul-bajo: #006AB5;
+    --azul-fuerte: #002A56;
+    --azul-botones: #0092CD;
+    --dorado: #CAB881;
+    --blanco: #fff;
+    --negro: #000;
+}
+
+/*/Primera fila barra*/
+@media (min-width: 768px) {
+  .px-md-7 {
+    padding-left: 7rem !important;
+    padding-right: 7.7rem !important;
+  }
+}
+
+.segundo-titulo {
+    font-family: 'Roboto-Black';
+    font-size: 2rem;
+    color: var(--blanco);
+}
+
+/*/Segunda fila barra (mobile)*/
+@media (max-width: 767.98px) {
+  .navbar {
+    background-color: var(--azul-fuerte) !important; /* móvil azul */
+    padding: 10px 0;
+  }
+  .navbar > .container {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+  .nav-link, .nav-link:focus, .nav-link:hover {
+    color: var(--blanco) !important;
+  }
+}
+
+/* ===== Navbar base (FULL WIDTH dorado en desktop) ===== */
+.navbar {
+    background-color: var(--dorado);      /* franja dorada a 100% */
+    padding: 10px 0;                      /* alto consistente */
+}
+.navbar > .container {
+    background: transparent;              /* el dorado vive en .navbar, no en el container */
+}
+.navbar-toggler {
+    border-color:var(--dorado) !important;
+}
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,<svg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'><path stroke='%23CAB881' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/></svg>");
+}
+/* Enlaces */
+.nav-link {
+    font-family: 'Roboto-Bold';
+    font-size: 0.9rem;
+    color: var(--azul-fuerte);
+}
+.nav-link:hover,
+.nav-link:focus {
+    color: var(--azul-fuerte);
+}
+
+/* Separación entre items */
+.navbar-nav .nav-item:not(:last-child) {
+    margin-right: 0.8rem;
+}
+
+/* Color texto collapse (no afecta links) */
+.navbar-collapse { color: var(--blanco); }
+
+/* Centrar los enlaces del navbar dentro de la franja (desktop) */
+@media (min-width: 992px) {
+  .navbar .navbar-collapse { justify-content: center; }
+  .navbar-nav.ms-auto {
+    margin-left: 22rem !important;
+    margin-right: 0 !important;
+  }
+}
+
+/* ===== Dropdown (no tocar) ===== */
+.dropdown-hover:hover .dropdown-menu {
+    display: block;
+    margin-top: 0;
+}
+.dropdown-menu {
+    width: 100vw;
+    padding: 5%;
+    width: 100%;
+    margin-top: 1rem !important;
+    padding: 1.5rem;
+    border-top: 1px solid #dee2e6;
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .15);
+}
+.dropdown-header {
+    font-family: 'Roboto-Bold';
+    color: black;
+    font-size: 1.2rem;
+}
+.dropdown-item {
+    font-family: 'Roboto-Regular';
+    font-size: 0.9rem;
+}
+.dropdown-item.ver-mas {
+    font-weight: bold;
+    color: #007bff;
+    margin-bottom: 0.5rem;
+}
+
+/* ===== Footer ===== */
+.categoria-footer {
+    font-size: 1rem;
+    font-family: 'Roboto-Regular';
+}
+.contenido-footer {
+    font-size: 0.9rem;
+    font-family: 'Roboto-Regular';
+}
+.footer-bg {
+    background-image: url('https://res.cloudinary.com/dwvatbtfk/image/upload/v1753714987/BGFooter_l1k4uk.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #002855;
+    padding-left: 1.9%;
+}
+.footer-copy {
+    background-color: var(--azul-fuerte);
+    color: #ffffff;
+    font-size: 0.9rem;
+    font-family: 'Roboto-Regular';
+}
+
+/* ===== Dropdown responsive ===== */
+@media (max-width: 991.98px) {
+    .dropdown-menu {
+        width: 82vw !important;
+        left: 0 !important;
+        right: 0 !important;
+        min-width: unset;
+        overflow-x: auto;
+        padding: 1rem;
+        box-sizing: border-box;
+        height: auto;
+        border-radius: 0 0 10px 10px;
+    }
+    .dropdown-contenedor { margin-left: -1.7rem; }
+    .navbar-collapse { padding: 0; }
+    .dropdown-menu .row { flex-wrap: wrap; }
+    .dropdown-menu .col-12 {
+        min-width: 0;
+        word-break: break-word;
+        white-space: normal;
+    }
+    .dropdown-item {
+        white-space: normal;
+        word-break: break-word;
+    }
+      .alineacion {
+    text-align: center;
+  }
+}
+
+/* Asegura que quede por encima del contenido al hacer scroll */
+#mainNav { z-index: 1040; }
+
+/* Mega menú a todo el ancho del nav en desktop */
+@media (min-width: 992px) {
+  #mainNav .dropdown.position-static .dropdown-menu {
+    left: 0; right: 0;
+  }
+}
+
+/* =========================================================
+   AJUSTES DE CENTRADO DEL TÍTULO SUPERIOR
+   ========================================================= */
+@media (min-width: 768px) {
+  .primera-fila .row { position: relative; }
+  .primera-fila .segundo-titulo {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    z-index: 1;
+    max-width: calc(100% - 2rem);
+    white-space: normal;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+  }
+}
+
+/* Igualar padding del header superior para alineación visual */
+@media (min-width: 768px) {
+  .px-md-7 {
+    padding-left: 7.5rem !important;
+    padding-right: 7.5rem !important;
+  }
+}
+
+/* =========================================================
+   BLOQUE FINAL: NAV FIJO AL TERMINAR EL HEADER (sin saltos)
+   - El JS añade .is-fixed cuando termina tu header
+   - #nav-spacer evita movimientos del contenido
+   ========================================================= */
+
+/* Fijación exacta cuando el header termina */
+#mainNav.is-fixed{
+  position: fixed;
+  top: 0; left: 0; right: 0;
+  z-index: 1051;           /* sobre contenido; debajo de modales Bootstrap */
+  isolation: isolate;      /* stacking context propio */
+}
+
+/* Suavizado visual de la sombra (opcional) */
+#mainNav{
+  transform: translateZ(0);
+  transition: box-shadow 160ms ease;
+}
+
+/* Spacer que ocupa el lugar del nav cuando éste se fija (evita saltos) */
+#nav-spacer{ height: 0; }
+
+/* (Opcional) menú colapsado scrolleable en móvil */
+@media (max-width: 991.98px){
+  #mainNav .navbar-collapse{
+    max-height: calc(100vh - 64px);
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+}
+
+/* Reset mínimo por si falta */
+html, body { margin: 0; }
+.fuente {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Roboto-Bold";
+  font-size: 2rem;
+  color: var(--azul-fuerte);
+  text-align: justify;
+  gap: 1em;
+}
+
+.fuente::before,
+.fuente::after {
+  content: "";
+  display: block;
+  height: 2px;
+  background: #000;
+  margin: 0 0.5em;
+  flex: 0 0 1;
+  flex-basis: 0;
+  transition: flex-basis 1s cubic-bezier(.77, 0, .18, 1);
+}
+
+.fuente span {
+  white-space: nowrap;
+}
+
+@media (max-width: 576px) {
+  .fuente {
+    font-size: 1.2rem;
+  }
+
+  .fuente.linea-activa::before,
+  .fuente.linea-activa::after {
+    flex-basis: 30px;
+  }
+}
+
+.fuente:not(.linea-activa)::before,
+.fuente:not(.linea-activa)::after {
+  flex-basis: 0 !important;
+  background: transparent;
+}
+
+.fuente.linea-activa::before,
+.fuente.linea-activa::after {
+  flex-basis: 200px;
+  background: #000;
+}
+
+@media (max-width: 576px) {
+  .fuente {
+    font-size: 1.2rem;
+  }
+
+  .fuente.linea-activa::before,
+  .fuente.linea-activa::after {
+    flex-basis: 15px;
+  }
+}
