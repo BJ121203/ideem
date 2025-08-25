@@ -216,3 +216,77 @@ function overlayByCategory(cat){
   };
   return map[cat] || null;
 }
+
+/* Cards estilo blog (máx 4 por fila) renderizadas desde JSON */
+
+const grid = document.getElementById('news-cards');
+
+(async function initCards(){
+  try{
+    // Usa window.articles si ya está cargado; si no, carga el JSON
+    const raw = Array.isArray(window.articles) && window.articles.length
+      ? window.articles
+      : await fetch(DATA_URL, {cache:'no-store'}).then(r => r.json());
+
+    // Orden por fecha DESC (más reciente → más antiguo)
+    const posts = raw.slice().sort((a,b) => parseDate(b?.date) - parseDate(a?.date));
+
+    renderCards(posts);
+  }catch(err){
+    console.error('No se pudieron cargar las noticias:', err);
+    if (grid) grid.innerHTML = `<div class="alert alert-danger">Error al cargar noticias.</div>`;
+  }
+})();
+
+function renderCards(posts){
+  if (!grid) return;
+  grid.innerHTML = posts.map(p => cardTemplate(p)).join('');
+
+  // Click → abrir detalle por slug
+  grid.querySelectorAll('.post-card').forEach(card => {
+    card.addEventListener('click', () => openPost(card.dataset.slug));
+  });
+}
+
+function cardTemplate(p){
+  const comments = (p.comments ?? null);
+  const commentsTxt = Number.isFinite(comments) ? ` · ${comments} comentarios` : '';
+  return `
+  <article class="post-card" data-slug="${esc(p.slug)}">
+    <div class="post-thumb">
+      <img src="${esc(p.image)}" alt="${esc(p.title)}" loading="lazy">
+      ${p.badge ? `<span class="post-badge">${esc(p.badge)}</span>` : ''}
+      <a href="noticias.html#/${esc(p.slug)}" class="stretched" aria-label="${esc(p.title)}"></a>
+    </div>
+    <div class="post-body">
+      <h3 class="post-title">${esc(p.title)}</h3>
+      <div class="post-meta">${esc(p.date || '')} · ${esc(p.category || 'General')}${commentsTxt}</div>
+      <p class="post-excerpt">${esc(excerpt(p.excerpt || p.content, 110))}</p>
+      <a href="noticias.html#/${esc(p.slug)}" class="post-read">Leer más <i class="fa-solid fa-arrow-right-long"></i></a>
+    </div>
+  </article>`;
+}
+
+/* === Navegación a detalle (SPA si existe renderDetail) === */
+function openPost(slug){
+  if (typeof window.renderDetail === 'function') {
+    history.pushState({slug}, '', `#/${encodeURIComponent(slug)}`);
+    window.renderDetail(slug);
+    window.scrollTo({top:0, behavior:'smooth'});
+  } else {
+    location.href = `noticias.html#/${encodeURIComponent(slug)}`;
+  }
+}
+
+/* === Utils === */
+function parseDate(s=''){ const t = Date.parse(s); return Number.isNaN(t) ? 0 : t; }
+function excerpt(text='', n=110){
+  const t = text.replace(/\s+/g,' ').trim();
+  return t.length > n ? t.slice(0, n-1).trim() + '…' : t;
+}
+function esc(s=''){
+  return String(s)
+    .replaceAll('&','&amp;').replaceAll('<','&lt;')
+    .replaceAll('>','&gt;').replaceAll('"','&quot;')
+    .replaceAll("'",'&#39;');
+}

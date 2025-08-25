@@ -1,6 +1,6 @@
 const shareButtons = document.getElementById('share-buttons');
 const blogContent = document.getElementById('blog-content');
-const contenido1 = document.getElementById('contenido1');
+const noticias = document.getElementById('Noticias');
 const miniaturas = document.getElementById('news-grid-section');
 
 // ===== Extracción del JSON =====
@@ -32,10 +32,10 @@ function slideTemplate(p) {
   `;
 }
 
-//====== Carrusel Infinito
+
 function InfiniteCarousel({ mount, items }) {
   const wrap = document.querySelector(mount);
-  if (!wrap) return; // si no existe el carrusel en la página, salimos
+  if (!wrap) return;
 
   const viewport = wrap.querySelector('.carousel-viewport');
   const track = wrap.querySelector('.carousel-track');
@@ -150,9 +150,8 @@ function InfiniteCarousel({ mount, items }) {
 
 // ===== Render de detalle =====
 function renderDetail(slug) {
-
-  contenido1?.classList.add('d-none');
-  miniaturas?.classList.add('d-none');
+  window.scrollTo({top:0, behavior:'smooth'});
+  noticias?.classList.add('d-none');
 
   const post = articles.find(a => a.slug === slug);
   if (!post) return;
@@ -197,9 +196,7 @@ function renderDetail(slug) {
      
       
         <div class="mt-3">
-          <h5 class="mb-3">Noticias relacionadas</h5>
-
-          <!-- NUEVA GRID -->
+        <h5 class= "mt-3 mb-5 fuente">Noticias relacionadas</h5>
           <div class="related-grid">
             ${related.map(item => `
               <a href="#"

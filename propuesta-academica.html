@@ -43,31 +43,42 @@
                                 </li>
                             </ul>
                         </div>
-                        <div class="filtro-div">
-                            <h6>Áreas de conocimiento</h6>
-                            <ul>
-                                <li>
-                                    <input type="checkbox" id="area1">
-                                    <label for="area1">Computación</label>
-                                </li>
-                                <li>
-                                    <input type="checkbox" id="area2">
-                                    <label for="area2">Dibujo Asistido por Computadora</label>
-                                </li>
-                                <li>
-                                    <input type="checkbox" id="area3">
-                                    <label for="area3">Diseño Grafico y Marketing Digital</label>
-                                </li>
-                                <li>
-                                    <input type="checkbox" id="area5">
-                                    <label for="area5">Ofimática</label>
-                                </li>
-                                <li>
-                                    <input type="checkbox" id="area6">
-                                    <label for="area6">Proyectos y Construcción</label>
-                                </li>
-                            </ul>
+                        <div class="filtro-curso">
+                            <div class="filtro-div">
+                                <h6>Áreas de conocimiento</h6>
+
+                                <div class="form-check">
+                                    <input id="area1" type="checkbox" class="form-check-input" value="Computación">
+                                    <label for="area1" class="form-check-label">Computación y Sistemas</label>
+                                </div>
+
+                                <div class="form-check">
+                                    <input id="area2" type="checkbox" class="form-check-input"
+                                        value="Dibujo Asistido por Computadora">
+                                    <label for="area2" class="form-check-label">Dibujo Asistido por Computadora</label>
+                                </div>
+
+                                <div class="form-check">
+                                    <input id="area3" type="checkbox" class="form-check-input"
+                                        value="Diseño Grafico y Marketing Digital">
+                                    <label for="area3" class="form-check-label">Diseño Grafico y Marketing
+                                        Digital</label>
+                                </div>
+
+                                <div class="form-check">
+                                    <input id="area4" type="checkbox" class="form-check-input" value="Ofimática">
+                                    <label for="area4" class="form-check-label">Ofimática</label>
+                                </div>
+
+                                <div class="form-check">
+                                    <input id="area5" type="checkbox" class="form-check-input"
+                                        value="Proyectos y Construcción">
+                                    <label for="area5" class="form-check-label">Proyecto y Construcción</label>
+                                </div>
+
+                            </div>
                         </div>
+
                         <a class="btn-ver-cursos-center">Ver todos los cursos</a>
                         <img src="https://res.cloudinary.com/dwvatbtfk/image/upload/v1753997002/Banner-promocional_kolnpm.jpg"
                             class="img-formacion" alt="formacion-oferta" />
@@ -104,8 +115,9 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
         crossorigin="anonymous"></script>
-        <script src="scripts/filtro-curso.js"></script>
+    <script src="scripts/filtro-curso.js"></script>
     <script src="scripts/Cursos.js" type="module"></script>
+
 </body>
 
 </html>

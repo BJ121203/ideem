@@ -16,8 +16,8 @@ async function init() {
   let filtroTipo = 'TODOS';
   let q = '';
 
-  // Usa atributo data-cols para decidir columnas por fila
-  let cols = ROW?.dataset.cols || '4'; // default 4
+ 
+  let cols = ROW?.dataset.cols || '4'; 
   let colClass = cols === '3' ? 'col-lg-4 col-xl-4' : 'col-lg-3 col-xl-3';
 
   try {

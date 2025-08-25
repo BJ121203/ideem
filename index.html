@@ -10,6 +10,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet" />
     <link rel="stylesheet" type="text/css" href="styles/global.css" />
     <link rel="stylesheet" type="text/css" href="styles/index.css" />
+    <link rel="stylesheet" type="text/css" href="styles/noticias-grid.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
 </head>
 
@@ -41,7 +42,8 @@
                             <div class="row align-items-center">
                                 <div class="col-md-6">
                                     <div class="text-start carrusel-texto">
-                                        <h5 class="carrusel-titulo">Transforma tu presente y construye un futuro en constante cambio</h5>
+                                        <h5 class="carrusel-titulo">Transforma tu presente y construye un futuro en
+                                            constante cambio</h5>
                                     </div>
                                 </div>
                             </div>
@@ -136,7 +138,7 @@
             </div>
 
             <div class="text-center mt-4">
-                <a href="/propuesta-academica.html" class="btn btn-lg btn-primary btn-oferta">
+                <a href="propuesta-academica.html" class="btn btn-lg btn-primary btn-oferta">
                     Ver toda la oferta académica
                 </a>
             </div>
@@ -200,26 +202,21 @@
     </section>
 
     <!-- Noticias -->
-    <div class="container my-4">
-
-        <div class="container" id="Novedades">
-            <div class="agentes-texto mb-4">
-                <h2 class="text-md-start text-center">INFÓRMATE SOBRE LAS NOVEDADES DE I<span class="dorado">D</span>EEM LATAM</h2>
-            </div>
-
-            <!-- Carrusel -->
-            <div id="json-carousel" class="carousel-wrap">
-                <button class="nav-btn nav-prev" aria-label="Anterior"><i class="bi bi-chevron-left"></i></button>
-                <div class="carousel-viewport">
-                    <div class="carousel-track"></div>
-                </div>
-                <button class="nav-btn nav-next" aria-label="Siguiente"><i class="bi bi-chevron-right"></i></button>
-            </div>
+    <section class="container" id="contenido1">
+        <div class="container directivos-texto py-4 mt-5">
+            <h6 class="text-md-start text-center">Explora Muestra más Recientes Novedades</h6>
         </div>
+        <div id="hero-section" class="hero-card" aria-live="polite"><!-- inyectado por JS --></div>
+    </section>
 
-        <!-- Contenedor donde se inyecta el detalle -->
-        <div id="blog-content" class="mt-4"></div>
-    </div>
+      <section id="news-grid-section" class="container mb-5 py-4"
+    style="--tile-overlay: rgba(0,42,86,.35); --tile-overlay-opacity:.35;">
+    <nav class="news-filters mb-3">
+      <div id="grid-filters" class="d-flex flex-wrap gap-2"><!-- pills por JS --></div>
+    </nav>
+
+    <div id="news-grid" class="news-grid" aria-label="Miniaturas de noticias"><!-- grid por JS --></div>
+  </section>
 
     <!-- Valores -->
     <div class="container valores-div" id="Valores">
@@ -442,6 +439,7 @@
     <script src="scripts/global.js"></script>
     <script type="module" src="scripts/Cursos.js"></script>
     <script type="module" src="scripts/Noticias.js"></script>
+    <script src="scripts/noticias-grid.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
         crossorigin="anonymous"></script>

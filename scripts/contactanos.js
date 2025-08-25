@@ -2,7 +2,7 @@
   "use strict";
 
   const SELECT_ID = "curso";
-  const DATA_URL = "/scripts/cursos.json";
+  const DATA_URL = "scripts/cursos.json";
 
   document.addEventListener("DOMContentLoaded", init);
 

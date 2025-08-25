@@ -397,7 +397,6 @@
   font-size: 50px;
   display: inline-block;
   transform: translateY(0);
-  transition: transform .25s ease, opacity .25s ease;
   text-shadow: var(--text-shadow);
 }
 
@@ -419,19 +418,16 @@
   max-height: 0;
   opacity: 0;
   overflow: hidden;
-  transition: max-height .50s ease, opacity .25s ease;
   text-shadow: var(--text-shadow);
   text-align: justify;
 }
 
 /* Hover: icono sube + aparece texto */
 .pilar-card:hover .pilar-icon {
-  transform: translateY(-12px);
   display: none
 }
 
 .pilar-card:hover .pilar-title {
-  transform: translateY(-12px);
   display: none
 }
 
@@ -449,132 +445,7 @@
   }
 
   .pilar-desc {
-
     font-size: 1rem;
-
   }
 
-}
-
-/* ------------------Sección del carrusel ------------------*/
-.carousel-section {
-  padding: 80px 0rem;
-  background-color: #f8f9fa;
-  height: auto;
-}
-
-/* Tarjeta de testimonio */
-
-@media (max-width: 991.98px) {
-
-  .carousel-item .col-md-4,
-  .carousel-item [class^="col-md-"] {
-    flex: 0 0 100%;
-    max-width: 100%;
-  }
-}
-
-.testimonial-card {
-  border-radius: 15px;
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
-  background: white;
-  padding: 30px 3rem 3rem 3rem;
-  text-align: center;
-  position: relative;
-  height: auto;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  margin: 2.5rem 15px;
-}
-
-.testimonial-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.12);
-}
-
-.profile-img {
-  width: 150px;
-  height: 150px;
-  object-fit: cover;
-  border-radius: 50%;
-  border: 4px solid white;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
-}
-
-.quote-mark {
-  font-size: 60px;
-  color: var(--azul-fuerte);
-  position: absolute;
-  top: 10px;
-  left: 20px;
-  opacity: 0.9;
-}
-
-.flag {
-  position: absolute;
-  width: 38px;
-  height: 22px;
-  border-radius: 5px;
-  border: 2px solid white;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
-}
-
-.testimonial-card p {
-  font-family: "Montserrat-Regular";
-  font-size: 1rem;
-  color: #000000;
-  margin-top: 2rem;
-  align-items: center;
-
-  justify-content: center;
-}
-
-.testimonial-card h5 {
-  font-family: "Montserrat-Bold";
-  color: var(--azul-fuerte);
-  text-align: center;
-  min-height: 5rem;
-}
-
-.testimonial-card a.btn {
-  background-color: var(--azul-fuerte);
-  border: none;
-  font-size: 14px;
-  width: 90%;
-  font-family: "Montserrat-Regular";
-  padding: 10px 16px;
-}
-
-.testimonial-card a.btn:hover {
-  background-color: var(--azul-botones);
-}
-
-.carousel-control-prev-icon,
-.carousel-control-next-icon {
-  background-image: none;
-  filter: none;
-  width: 30px;
-  height: 30px;
-}
-
-.carousel-control-prev-icon {
-  background: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23007bff' viewBox='0 0 8 8'%3E%3Cpath d='M5.5 0l-4 4 4 4z'/%3E%3C/svg%3E") no-repeat center;
-}
-
-.carousel-control-next-icon {
-  background: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23007bff' viewBox='0 0 8 8'%3E%3Cpath d='M2.5 0l4 4-4 4z'/%3E%3C/svg%3E") no-repeat center;
-}
-
-.carousel-control-prev,
-.carousel-control-next {
-  width: auto;
-  top: 50%;
-  transform: translateY(-50%);
-}
-
-.carousel-control-prev {
-  left: -40px;
-}
-
-.carousel-control-next {
-  right: -40px;
 }

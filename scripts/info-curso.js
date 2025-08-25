@@ -81,7 +81,9 @@
         const datos = $(".datos-curso");
         const h = findH5ByText(datos, "DIRIGIDO A");
         if (!h || !h.nextElementSibling) return;
-        const icon = `<i class="fa-solid fa-square" style="font-size: 0.5rem; color: var(--azul-fuerte); margin-right: 0.5rem;"></i>`;
+        const icon = `<img src="https://res.cloudinary.com/dwvatbtfk/image/upload/v1756132567/vi%C3%B1eta1_irvb4c.svg" 
+        class=" d-inline-block align-self-top" alt="" aria-hidden="true"
+                width="16" height="16" loading="lazy">`;
         const val = curso.dirigidoA;
         if (Array.isArray(val)) {
             h.nextElementSibling.outerHTML = val.map(t => `<p class="mb-2">${icon}${t}</p>`).join("");
@@ -93,7 +95,9 @@
         const datos = $(".datos-curso");
         const h = findH5ByText(datos, "REQUISITOS");
         if (!h || !h.nextElementSibling) return;
-        const icon = `<i class="fa-solid fa-square" style="font-size: 0.5rem; color: var(--azul-fuerte); margin-right: 0.5rem;"></i>`;
+        const icon = `<img src="https://res.cloudinary.com/dwvatbtfk/image/upload/v1756132567/vi%C3%B1eta1_irvb4c.svg" 
+        class=" d-inline-block align-self-top" alt="" aria-hidden="true"
+                width="16" height="16" loading="lazy">`;
         const val = curso.requisitos;
         if (Array.isArray(val)) {
             h.nextElementSibling.outerHTML = val.map(t => `<p class="mb-2">${icon}${t}</p>`).join("");
@@ -128,16 +132,20 @@
         const datos = $(".datos-curso");
         const h = findH5ByText(datos, "LO QUE APRENDERÁS"); if (!h) return;
         const wrap = h.parentElement;
-        const icon = `<i class="fa-solid fa-square" style="font-size: 0.5rem; color: var(--azul-fuerte); margin-right: 0.5rem;"></i>`;
+        const icon = `<img src="https://res.cloudinary.com/dwvatbtfk/image/upload/v1756132567/vi%C3%B1eta1_irvb4c.svg" class=" d-inline-block align-self-top" alt="" aria-hidden="true"
+                width="16" height="16" loading="lazy">`;
         const list = (curso.aprenderas || curso.aprendras || [])
             .map(t => `<p class="col-6 mb-3">${icon}${t}</p>`).join("");
         wrap.innerHTML = `<h5>LO QUE APRENDERÁS</h5>${list}`;
     }
+
     function renderCamposAplicacion(curso) {
         const datos = $(".datos-curso");
         const h = findH5ByText(datos, "CAMPOS DE APLICACIÓN"); if (!h) return;
         const wrap = h.parentElement;
-        const icon = `<i class="fa-solid fa-square" style="font-size: 0.5rem; color: var(--azul-fuerte); margin-right: 0.5rem;"></i>`;
+        const icon = `<img src="https://res.cloudinary.com/dwvatbtfk/image/upload/v1756132567/vi%C3%B1eta1_irvb4c.svg" 
+        class=" d-inline-block align-self-top" alt="" aria-hidden="true"
+                width="16" height="16" loading="lazy">`;
         const list = (curso.camposAplicacion || [])
             .map(t => `<p class="mb-3 col-6">${icon}${t}</p>`).join("");
         wrap.innerHTML = `<h5>CAMPOS DE APLICACIÓN</h5>${list}`;

@@ -1,4 +1,3 @@
-
 (function () {
   "use strict";
 
@@ -13,6 +12,9 @@
   const resultadosH6 = document.querySelector(".cursos-resultados h6");
 
   const $all = (sel, ctx = document) => Array.from(ctx.querySelectorAll(sel));
+
+  // --- NUEVO: marcar checkbox de área recibido en ?area= ---
+
 
   function diac(s) {
     return String(s || "")
@@ -196,30 +198,65 @@
     if (selectOrden) selectOrden.selectedIndex = 0;
   }
 
+  // ---------- NUEVO: preselección de área desde ?area= ----------
+  function preselectAreaFromURL() {
+  const params = new URLSearchParams(location.search);
+  const id = params.get("area"); // ej: area4
+  if (!id) return false;
+
+  const chk = document.getElementById(id);
+  if (!chk) return false;
+
+ 
+  document.querySelectorAll(".filtro-curso input[type=checkbox]")
+    .forEach(x => x.checked = false);
+
+  chk.checked = true;
+  return true;          
+}
+
+  // --------------------------------------------------------------
+
+
   document.addEventListener("DOMContentLoaded", async () => {
-    const base = prepare(await getCursos());
+  const base = prepare(await getCursos());
 
+  // 1) Marca el checkbox ANTES del primer render
+  const preselected = preselectAreaFromURL();
+
+  // 2) Primer render ya leyendo lo marcado
+  renderCards(applyFilters(base, readFilters()));
+
+  // 3) Ahora sí, listeners para cambios manuales
+  if (buscador) buscador.addEventListener("input", debounce(() => {
     renderCards(applyFilters(base, readFilters()));
+  }, 200));
 
-    if (buscador) buscador.addEventListener("input", debounce(() => {
+  if (filtrosWrap) filtrosWrap.addEventListener("change", (e) => {
+    if (e.target && e.target.matches("input[type=checkbox]")) {
       renderCards(applyFilters(base, readFilters()));
-    }, 200));
-
-    if (filtrosWrap) filtrosWrap.addEventListener("change", (e) => {
-      if (e.target && e.target.matches("input[type=checkbox]")) {
-        renderCards(applyFilters(base, readFilters()));
-      }
-    });
-
-    if (selectOrden) selectOrden.addEventListener("change", () => {
-      renderCards(applyFilters(base, readFilters()));
-    });
-
-    if (btnVerTodos) btnVerTodos.addEventListener("click", (e) => {
-      e.preventDefault();
-      clearFilters();
-      renderCards(applyFilters(base, readFilters()));
-      if (buscador) buscador.focus();
-    });
+    }
   });
+
+  if (selectOrden) selectOrden.addEventListener("change", () => {
+    renderCards(applyFilters(base, readFilters()));
+  });
+
+  if (btnVerTodos) btnVerTodos.addEventListener("click", (e) => {
+    e.preventDefault();
+    if (buscador) buscador.value = "";
+    document.querySelectorAll(".filtro-curso input[type=checkbox]").forEach(x => x.checked = false);
+    if (selectOrden) selectOrden.selectedIndex = 0;
+    renderCards(applyFilters(base, readFilters()));
+    if (buscador) buscador.focus();
+  });
+
+  // 4) (defensivo) si el filtro se crea tarde, re-render en el siguiente tick
+  if (preselected) {
+    setTimeout(() => {
+      renderCards(applyFilters(base, readFilters()));
+    }, 0);
+  }
+});
+
 })();
